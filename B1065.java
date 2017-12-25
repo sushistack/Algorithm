@@ -18,7 +18,7 @@ public class B1065 {
                 else bw.write(a[0] - 1 + "9\n");
                 break;
             case 3:
-                
+
                 break;
             case 4: bw.write("999\n");break;
         }

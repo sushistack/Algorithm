@@ -25,7 +25,7 @@ public class B1874 {
             }else if (s.peek() == a[t]) {
                 s.pop();list.add('-');t++;
             }else {
-                makeSeries = false;
+                makeSeries = false;break;
             }
         }
 
