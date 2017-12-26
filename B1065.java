@@ -1,28 +1,28 @@
 import java.io.*;
 
 public class B1065 {
-    static String N;
-    static int[] a = new int[4];
-    static int[] b = new int[4];
+    static int N;
+    static int[] han = new int[1001];
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        N = br.readLine();
-        for (int i = 0; i < N.length(); i++) {
-            a[i] = N.charAt(i) - 48;
-        }
-        switch (N.length()) {
-            case 1: bw.write(a[0] + "\n");break;
-            case 2:
-                if (a[0] <= a[1]) bw.write(N + "\n");
-                else bw.write(a[0] - 1 + "9\n");
-                break;
-            case 3:
-
-                break;
-            case 4: bw.write("999\n");break;
-        }
+        N = Integer.parseInt(br.readLine());
+        initHan();bw.write(han[N] + "\n");
         bw.flush();bw.close();
 
+    }
+    public static void initHan() {
+        for (int i = 1; i < 100; i++) {
+            han[i] = i;
+        }
+        String number, numbers[];
+        for (int i = 100; i < 1000; i++) {
+            number = "" + i;
+            numbers = number.split("");
+            int term = Integer.parseInt(numbers[1]) - Integer.parseInt(numbers[0]);
+            han[i] = ((Integer.parseInt(numbers[0]) + 2 * term) == Integer.parseInt(numbers[2])) ?
+                    han[i - 1] + 1 : han[i - 1];
+        }
+        han[1000] = han[999];
     }
 }
