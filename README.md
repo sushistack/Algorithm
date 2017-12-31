@@ -230,7 +230,23 @@
 
 2606 - 바이러스, 플로이드인줄 알았더니 bfs (blog 게시 예정)
 
+CF10A - power consumption calulation, 이행적인 문제 생각하면 쉬움
+
 CF2A - Winner, 해시로 승리자 찾기, 최대 값을 구하는 방법에 좀 의아한 점이 있음
+
+CF3A - shortest path of king, bfs 8방향 문제, bfs가 shortest path를 보장하는 이유는?
+
+CF4A - watermelon, 간단한 문제
+
+CF5A - chat server outgoing traffic, 간단한 String 문제
+
+CF6A - triangle, 간단한 수학문제
+
+CF7A - Kalevich and chess, 간단한 맵 스위치 문제
+
+CF8A - train and peter, substring 판별 문제
+
+CF9A - die roll, 간단한 문제
 
 Hongik1 - 더하기, 단순
 
@@ -255,7 +271,7 @@ Hongik10 - 전구 끄기, (진행중, blog 게시 예정)
 
 
 
-게시된 문제 수: 124
+게시된 문제 수: 133
 못푼 문제 수: 16
 blog 게시 예정: 36
 
