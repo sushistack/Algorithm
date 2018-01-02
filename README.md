@@ -83,6 +83,8 @@
 
 2108 - 통계학, 반올림에 대한 체크 필요
 
+2166 - 다각형의 면적, 특수한 풀이가 존재하는 문제
+
 2292 - 벌집, 간단한 규칙찾기
 
 2293 - 동전, 경우의 수를 구하는 문제, DP 생각하기 어려웠음, 다시 풀어봐야함.
@@ -232,6 +234,22 @@
 
 CF10A - power consumption calulation, 이행적인 문제 생각하면 쉬움
 
+CF10B - cinema cashier, dp라기보단 그리디에 가까운 문제
+
+CF11A - increasing sequence, 간단한 그리디 문제
+
+CF12A - super agent, 간단한 문제
+
+CF13A - numbers, n-base number, gcd를 이용한 수학 문제
+
+CF14A - letter, 최대 최소 구하기문제
+
+CF14D - Two path, 트리의 지름 + 트리 두개 운영하기
+
+CF20C - dijktra, 전형적인 다익스트라 문제
+
+CF21C - stripe 2, 전형적인 dp지만 못플었음
+
 CF2A - Winner, 해시로 승리자 찾기, 최대 값을 구하는 방법에 좀 의아한 점이 있음
 
 CF3A - shortest path of king, bfs 8방향 문제, bfs가 shortest path를 보장하는 이유는?
@@ -271,7 +289,7 @@ Hongik10 - 전구 끄기, (진행중, blog 게시 예정)
 
 
 
-게시된 문제 수: 133
+게시된 문제 수: 142
 못푼 문제 수: 16
 blog 게시 예정: 26
 
