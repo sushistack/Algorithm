@@ -19,13 +19,14 @@ public class CF21C {
             t = sum / 3;
             dp[n - 1] = (a[n - 1] == t) ? 1 : 0;
             for (int i = n - 2; i > 0; i--) {
-                dp[i] = dp[i + 1];
+                dp[i] = dp[i + 1];// 부분 합들 중에 t인 것이 있으면 더해줌
                 dp[i] += (s[n - 1] - s[i - 1] == t) ? 1 : 0;
             }
+            // 앞에서부터 부분합이 t이면
             for (int i = 0; i < n - 2; i++) {
                 count += (s[i] == t) ? dp[i + 2] : 0;
             }
-        }else count = 0;
+        }
         bw.write(count + "\n");
         bw.flush();bw.close();
     }
