@@ -1,6 +1,10 @@
 # Algorithm
 알고리즘 문제들을 묶어 놓은 java파일들 입니다.
 
+1003 - 피보나치 함수, 간단한 문제
+
+1005 - ACM Craft, 전형적인 dfs + memoization, dp문제, 다익스트라로도 해결 가능, 최장거리 찾기
+
 10039 - 평균점수, 간단한 계산 문제
 
 1011 - Fly me to the Alpha Centauri, 규칙찾기
@@ -43,6 +47,8 @@
 
 11401 - 이항계수, 컴비네이션 및 모듈러
 
+1149 - RGB 거리, 간단한 DP 문제
+
 1152 - 단어의 개수, 단순한 문자열 계산, 문제가 제대로 설명이 안되어있음
 
 1157 - 단어 공부, 간단한 문자열 계산
@@ -78,6 +84,8 @@
 1912 - 연속합, prefix로 풀었다가 안풀려서 DP로 푼 문제, reference를 봤기때문에 다시봐야 함.
 
 1929 - 소수구하기, 간단한 소수 구하기
+
+1932 - 숫자 삼각형, 간단한 dp 문제
 
 1978 - 소수 찾기, 소수 구하는 문제
 
@@ -238,6 +246,8 @@ CF10B - cinema cashier, dp라기보단 그리디에 가까운 문제
 
 CF11A - increasing sequence, 간단한 그리디 문제
 
+CF118D - caesar's Legions, 어려운 dp, 나중에 다시 해볼 것, (blog 게시 예정)
+
 CF12A - super agent, 간단한 문제
 
 CF13A - numbers, n-base number, gcd를 이용한 수학 문제
@@ -246,9 +256,19 @@ CF14A - letter, 최대 최소 구하기문제
 
 CF14D - Two path, 트리의 지름 + 트리 두개 운영하기
 
+CF16E - fish, 확률과 dp (진행중)
+
+CF19B - checkout assistant, 생각도 못할만큼 어려운 dp
+
+CF200B - Drink, 간단한 문제
+
 CF20C - dijktra, 전형적인 다익스트라 문제
 
-CF21C - stripe 2, 전형적인 dp지만 못플었음
+CF21C - stripe 2, 전형적인 dp지만 못플었음, (진행중)
+
+CF22B - bargaining table, dp 문제로 최대 행렬 영역의 둘레를 구하는 문제
+
+CF24E - Berland collider, binary search의 이용, 나름 신박한 문제
 
 CF2A - Winner, 해시로 승리자 찾기, 최대 값을 구하는 방법에 좀 의아한 점이 있음
 
@@ -259,6 +279,8 @@ CF4A - watermelon, 간단한 문제
 CF5A - chat server outgoing traffic, 간단한 String 문제
 
 CF6A - triangle, 간단한 수학문제
+
+CF611C - NewYear and domino, dp 내가 생각해서 풀어봤던 문제, (blog 게시 예정)
 
 CF7A - Kalevich and chess, 간단한 맵 스위치 문제
 
@@ -289,7 +311,7 @@ Hongik10 - 전구 끄기, (진행중, blog 게시 예정)
 
 
 
-게시된 문제 수: 142
-못푼 문제 수: 16
-blog 게시 예정: 26
+게시된 문제 수: 154
+못푼 문제 수: 17
+blog 게시 예정: 28
 
