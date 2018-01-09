@@ -250,6 +250,10 @@ CF10B - cinema cashier, dp라기보단 그리디에 가까운 문제
 
 CF11A - increasing sequence, 간단한 그리디 문제
 
+CF112A - Petya and Strings, 간단한 문제
+
+CF118A - String task, 간단한 문제
+
 CF118D - caesar's Legions, 어려운 dp, 나중에 다시 해볼 것, (blog 게시 예정)
 
 CF12A - super agent, 간단한 문제
@@ -259,6 +263,8 @@ CF13A - numbers, n-base number, gcd를 이용한 수학 문제
 CF14A - letter, 최대 최소 구하기문제
 
 CF14D - Two path, 트리의 지름 + 트리 두개 운영하기
+
+CF158A - next round, 간단
 
 CF16E - fish, 확률과 dp (진행중)
 
@@ -272,7 +278,11 @@ CF21C - stripe 2, 전형적인 dp지만 못플었음, (진행중)
 
 CF22B - bargaining table, dp 문제로 최대 행렬 영역의 둘레를 구하는 문제
 
+CF231A - team, 간단한 문제
+
 CF24E - Berland collider, binary search의 이용, 나름 신박한 문제
+
+CF282A - Bit++, 간단한 문제
 
 CF2A - Winner, 해시로 승리자 찾기, 최대 값을 구하는 방법에 좀 의아한 점이 있음
 
@@ -280,15 +290,23 @@ CF3A - shortest path of king, bfs 8방향 문제, bfs가 shortest path를 보장
 
 CF4A - watermelon, 간단한 문제
 
+CF50A - domino piling, 간단한 문제
+
+CF580A - kefa and first steps, 규칙찾고 간단한 문제
+
 CF5A - chat server outgoing traffic, 간단한 String 문제
 
 CF6A - triangle, 간단한 수학문제
+
+CF602B - Approximating a Constant Range, 두 개의 포인터 문제
 
 CF611C - NewYear and domino, dp 내가 생각해서 풀어봤던 문제, (blog 게시 예정)
 
 CF7A - Kalevich and chess, 간단한 맵 스위치 문제
 
 CF8A - train and peter, substring 판별 문제
+
+CF96A - Football, 간단
 
 CF9A - die roll, 간단한 문제
 
@@ -340,6 +358,8 @@ SWE1868 - 파핑파핑 지뢰 찾기, dfs지만 생각해볼 문제 (blog 게시
 
 SWE1928 - Base64 decoder, 디코딩 문제
 
+SWE1946 - 간단한 압축 풀기, String 문제
+
 SWE2072 - 홀수만 더하기, 기초 문제
 
 SWE2819 - 격자판 숫자 이어 붙이기, BFS응용
@@ -348,7 +368,7 @@ SWE2930 - 힙, 힙을 구현하는 문제, 나중에 꼭 볼것
 
 SWE3304 - LCS
 
-게시된 문제 수: 174
+게시된 문제 수: 184
 못푼 문제 수: 18
 blog 게시 예정: 31
 
