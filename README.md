@@ -274,11 +274,15 @@ CF14A - letter, 최대 최소 구하기문제
 
 CF14D - Two path, 트리의 지름 + 트리 두개 운영하기
 
+CF148A - insomnia ure, 간단
+
 CF158A - next round, 간단
 
 CF16E - fish, 확률과 dp (진행중)
 
 CF160A - Twins, 간단한 문제
+
+CF189A - Cut ribbon, 간단한 dp문제
 
 CF19B - checkout assistant, 생각도 못할만큼 어려운 dp
 
@@ -300,6 +304,8 @@ CF263A - beautiful matrix, 간단한 문제
 
 CF266A - Stone on the table, 간단한 문제
 
+CF271A - beautiful year, 전체 비교문제, 간단
+
 CF281A - Word capitalization, 간단
 
 CF282A - Bit++, 간단한 문제
@@ -308,7 +314,11 @@ CF2A - Winner, 해시로 승리자 찾기, 최대 값을 구하는 방법에 좀
 
 CF3A - shortest path of king, bfs 8방향 문제, bfs가 shortest path를 보장하는 이유는?
 
+CF337A - puzzles, 간단하진 않은 문제, 한번 다시 볼것
+
 CF4A - watermelon, 간단한 문제
+
+CF41A - translation, 간단한 문제
 
 CF467A - George and accommodation, 간단
 
@@ -366,19 +376,29 @@ SWE1208 - Flatten, 간단한 문제
 
 SWE1210 - radder1, 간단한 dfs 문제
 
+SWE1218 - 괄호 짝짓기, 간단한 스택 문제
+
 SWE1219 - 길찾기, 다익스트라
 
 SWE1222 - 계산기, 간단한 문제
 
+SWE1226 - 미로1, 간단한 dfs
+
+SWE1247 - 최적 경로, 전체 탐색 문제, TSP를 응용할 수 있음
+
 SWE1249 - 보급로, bfs같지만 사실은 다익스트라인 문제(blog 게시 예정)
 
 SWE1284 - 수도 요금 경쟁, 간단한 문제
+
+SWE1486 - 장훈이의 높은 선반, 전체 탐색 dfs
 
 SWE1494 - 사랑의 카운슬러, 백트래킹, dfs
 
 SWE1545 - 거꾸로 출력해 보아요, 쉬운 문제
 
 SWE1803 - shortest path faster, 다익스트라
+
+SWE1808 - 지희의 고장난 계산기, 쉬운 형태의 dp, 다시 볼 것
 
 SWE1824 - 혁진이의 프로그램 검증, (진행중)
 
@@ -396,7 +416,7 @@ SWE2930 - 힙, 힙을 구현하는 문제, 나중에 꼭 볼것
 
 SWE3304 - LCS
 
-게시된 문제 수: 198
+게시된 문제 수: 208
 못푼 문제 수: 18
 blog 게시 예정: 31
 
