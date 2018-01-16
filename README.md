@@ -270,6 +270,8 @@ CF131A - cAPS lock, 간단한 규칙
 
 CF133A - HQ+9, 간단한 문제
 
+CF136A - present, 간단한 문제
+
 CF14A - letter, 최대 최소 구하기문제
 
 CF14D - Two path, 트리의 지름 + 트리 두개 운영하기
@@ -321,6 +323,10 @@ CF4A - watermelon, 간단한 문제
 CF41A - translation, 간단한 문제
 
 CF467A - George and accommodation, 간단
+
+CF469A - I wanna be the Guy, 간단한 문제
+
+CF479A - expression, 간단한 문제
 
 CF50A - domino piling, 간단한 문제
 
@@ -386,6 +392,8 @@ SWE1226 - 미로1, 간단한 dfs
 
 SWE1247 - 최적 경로, 전체 탐색 문제, TSP를 응용할 수 있음
 
+SWE1248 - 공통 조상, 트리
+
 SWE1249 - 보급로, bfs같지만 사실은 다익스트라인 문제(blog 게시 예정)
 
 SWE1284 - 수도 요금 경쟁, 간단한 문제
@@ -402,6 +410,8 @@ SWE1808 - 지희의 고장난 계산기, 쉬운 형태의 dp, 다시 볼 것
 
 SWE1824 - 혁진이의 프로그램 검증, (진행중)
 
+SWE1861 - 정사각형 방, 양방향 bfs
+
 SWE1868 - 파핑파핑 지뢰 찾기, dfs지만 생각해볼 문제 (blog 게시 예정) 
 
 SWE1928 - Base64 decoder, 디코딩 문제
@@ -416,7 +426,7 @@ SWE2930 - 힙, 힙을 구현하는 문제, 나중에 꼭 볼것
 
 SWE3304 - LCS
 
-게시된 문제 수: 208
+게시된 문제 수: 213
 못푼 문제 수: 18
 blog 게시 예정: 31
 
