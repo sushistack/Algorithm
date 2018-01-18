@@ -292,6 +292,8 @@ CF200B - Drink, 간단한 문제
 
 CF20C - dijktra, 전형적인 다익스트라 문제
 
+CF208A - Dubstep, 간단한 문제
+
 CF21C - stripe 2, 전형적인 dp지만 못플었음, (진행중)
 
 CF22B - bargaining table, dp 문제로 최대 행렬 영역의 둘레를 구하는 문제
@@ -316,17 +318,25 @@ CF2A - Winner, 해시로 승리자 찾기, 최대 값을 구하는 방법에 좀
 
 CF3A - shortest path of king, bfs 8방향 문제, bfs가 shortest path를 보장하는 이유는?
 
+CF318A - even odds, 간단한 문제
+
 CF337A - puzzles, 간단하진 않은 문제, 한번 다시 볼것
 
 CF4A - watermelon, 간단한 문제
 
 CF41A - translation, 간단한 문제
 
+CF405A - Gravity Flip, 간단한 소팅
+
+CF451A - Game with sticks, 간단한 문제지만 뭔가 이상하게 풀리는 문제
+
 CF467A - George and accommodation, 간단
 
 CF469A - I wanna be the Guy, 간단한 문제
 
 CF479A - expression, 간단한 문제
+
+CF486A - Calculating function, 간단한 문제
 
 CF50A - domino piling, 간단한 문제
 
@@ -345,6 +355,8 @@ CF69A - young physicist, 간단한 문제
 CF602B - Approximating a Constant Range, 두 개의 포인터 문제
 
 CF611C - NewYear and domino, dp 내가 생각해서 풀어봤던 문제, (blog 게시 예정)
+
+CF617A - Elephant, 간단한 문제
 
 CF7A - Kalevich and chess, 간단한 맵 스위치 문제
 
@@ -426,7 +438,7 @@ SWE2930 - 힙, 힙을 구현하는 문제, 나중에 꼭 볼것
 
 SWE3304 - LCS
 
-게시된 문제 수: 213
+게시된 문제 수: 219
 못푼 문제 수: 18
 blog 게시 예정: 31
 
