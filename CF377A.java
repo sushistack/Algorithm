@@ -47,28 +47,20 @@ public class CF377A {
         bw.flush();bw.close();
 
     }
-
-//    public static void dfs(Point p) {
-//        if (c < 1) return;
-//        visited[p.x][p.y] = true;
-//        c--; map[p.x][p.y] = '$';
-//        for (int i = 0; i < 4; i++) {
-//            int nx = p.x + dx[i], ny = p.y + dy[i];
-//            if (!visited[nx][ny] && map[nx][ny] == '.') dfs(new Point(nx, ny));
-//        }
-//    }
-
+    
     public static void dfs(Point p) {
         Stack<Point> s = new Stack<>();
         s.push(p);
         while (!s.isEmpty()) {
             Point cur = s.pop();
-            visited[cur.x][cur.y] = true;
             c--; map[cur.x][cur.y] = '$';
             if (c == 0) break;
             for (int i = 0; i < 4; i++) {
                 int nx = cur.x + dx[i], ny = cur.y + dy[i];
-                if (!visited[nx][ny] && map[nx][ny] == '.') s.push(new Point(nx, ny));
+                if (!visited[nx][ny] && map[nx][ny] == '.') {
+                    visited[nx][ny] = true;
+                    s.push(new Point(nx, ny));
+                }
             }
         }
     }
