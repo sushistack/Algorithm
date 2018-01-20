@@ -274,6 +274,8 @@ CF136A - present, 간단한 문제
 
 CF14A - letter, 최대 최소 구하기문제
 
+CF144A - Arrival of the general, 간단한 문제 
+
 CF14D - Two path, 트리의 지름 + 트리 두개 운영하기
 
 CF148A - insomnia ure, 간단
@@ -322,6 +324,10 @@ CF318A - even odds, 간단한 문제
 
 CF337A - puzzles, 간단하진 않은 문제, 한번 다시 볼것
 
+CF344A - Magnets,  간단한 문제
+
+CF377A - Maze, 재귀로는 풀리지만, stack으론 안풀리는 문제?
+
 CF4A - watermelon, 간단한 문제
 
 CF41A - translation, 간단한 문제
@@ -330,9 +336,13 @@ CF405A - Gravity Flip, 간단한 소팅
 
 CF451A - Game with sticks, 간단한 문제지만 뭔가 이상하게 풀리는 문제
 
+CF460A - Vasya and socks, 간단한 문제
+
 CF467A - George and accommodation, 간단
 
 CF469A - I wanna be the Guy, 간단한 문제
+
+CF472A - learn from math, 간단한 문제
 
 CF479A - expression, 간단한 문제
 
@@ -340,11 +350,17 @@ CF486A - Calculating function, 간단한 문제
 
 CF50A - domino piling, 간단한 문제
 
+CF500A - New year transportation, 간단한 그래프 문제
+
 CF546A - soldier and bananas, 간단
+
+CF579A - Raising bacteria, 간단한 비트 마스크 문제
 
 CF58A - chat room, 간단
 
 CF580A - kefa and first steps, 규칙찾고 간단한 문제
+
+CF59A - Word, 간단
 
 CF5A - chat server outgoing traffic, 간단한 String 문제
 
@@ -353,6 +369,8 @@ CF6A - triangle, 간단한 수학문제
 CF69A - young physicist, 간단한 문제
 
 CF602B - Approximating a Constant Range, 두 개의 포인터 문제
+
+CF61A - Ultra-Fast Mathematician, 간단한 XOR 문제
 
 CF611C - NewYear and domino, dp 내가 생각해서 풀어봤던 문제, (blog 게시 예정)
 
@@ -438,7 +456,7 @@ SWE2930 - 힙, 힙을 구현하는 문제, 나중에 꼭 볼것
 
 SWE3304 - LCS
 
-게시된 문제 수: 219
+게시된 문제 수: 228
 못푼 문제 수: 18
 blog 게시 예정: 31
 
