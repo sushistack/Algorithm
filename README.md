@@ -274,6 +274,8 @@ CF136A - present, 간단한 문제
 
 CF14A - letter, 최대 최소 구하기문제
 
+CF141A - Amusing Joke, 간단한 문제
+
 CF144A - Arrival of the general, 간단한 문제 
 
 CF14D - Two path, 트리의 지름 + 트리 두개 운영하기
@@ -300,15 +302,21 @@ CF21C - stripe 2, 전형적인 dp지만 못플었음, (진행중)
 
 CF22B - bargaining table, dp 문제로 최대 행렬 영역의 둘레를 구하는 문제
 
+CF228A - Is your horseshoe on the other hoof?, 간단한 문제
+
 CF231A - team, 간단한 문제
 
 CF236A - Boy or girl, 간단한 문제
 
 CF24E - Berland collider, binary search의 이용, 나름 신박한 문제
 
+CF25A - IQ test, 생각하기 어려웠던 문제? 
+
 CF263A - beautiful matrix, 간단한 문제
 
 CF266A - Stone on the table, 간단한 문제
+
+CF268A - Game, 간단한 문제
 
 CF271A - beautiful year, 전체 비교문제, 간단
 
@@ -328,11 +336,17 @@ CF344A - Magnets,  간단한 문제
 
 CF377A - Maze, dfs 문제
 
+CF379A - New Year Candles, 간단한 문제
+
 CF4A - watermelon, 간단한 문제
+
+CF4C - Registration System, 간단한 문제
 
 CF41A - translation, 간단한 문제
 
 CF405A - Gravity Flip, 간단한 소팅
+
+CF443A - Anton and Letters, 간단한 문제
 
 CF451A - Game with sticks, 간단한 문제지만 뭔가 이상하게 풀리는 문제
 
@@ -351,6 +365,10 @@ CF486A - Calculating function, 간단한 문제
 CF50A - domino piling, 간단한 문제
 
 CF500A - New year transportation, 간단한 그래프 문제
+
+CF510A - Fox And Snake, 간단한 문제
+
+CF520A - Pangram, 간단한 문제
 
 CF546A - soldier and bananas, 간단
 
@@ -378,7 +396,11 @@ CF617A - Elephant, 간단한 문제
 
 CF7A - Kalevich and chess, 간단한 맵 스위치 문제
 
+CF734A - Anton and Danik, 간단한 문제
+
 CF8A - train and peter, substring 판별 문제
+
+CF82A - Double Cola, 약간 생각했던 문제, Math
 
 CF96A - Football, 간단
 
@@ -450,13 +472,15 @@ SWE1946 - 간단한 압축 풀기, String 문제
 
 SWE2072 - 홀수만 더하기, 기초 문제
 
+SWE2105 - 디저트 카페, bfs + bitmask
+
 SWE2819 - 격자판 숫자 이어 붙이기, BFS응용
 
 SWE2930 - 힙, 힙을 구현하는 문제, 나중에 꼭 볼것
 
 SWE3304 - LCS
 
-게시된 문제 수: 228
+게시된 문제 수: 240
 못푼 문제 수: 18
 blog 게시 예정: 31
 
