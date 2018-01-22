@@ -326,7 +326,7 @@ CF337A - puzzles, 간단하진 않은 문제, 한번 다시 볼것
 
 CF344A - Magnets,  간단한 문제
 
-CF377A - Maze, 재귀로는 풀리지만, stack으론 안풀리는 문제?
+CF377A - Maze, dfs 문제
 
 CF4A - watermelon, 간단한 문제
 

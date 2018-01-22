@@ -47,7 +47,7 @@ public class CF377A {
         bw.flush();bw.close();
 
     }
-    
+
     public static void dfs(Point p) {
         Stack<Point> s = new Stack<>();
         s.push(p);
