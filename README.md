@@ -304,6 +304,8 @@ CF22B - bargaining table, dp 문제로 최대 행렬 영역의 둘레를 구하�
 
 CF228A - Is your horseshoe on the other hoof?, 간단한 문제
 
+CF230A - Dragons, 간단한 소팅
+
 CF231A - team, 간단한 문제
 
 CF236A - Boy or girl, 간단한 문제
@@ -394,6 +396,8 @@ CF611C - NewYear and domino, dp 내가 생각해서 풀어봤던 문제, (blog �
 
 CF617A - Elephant, 간단한 문제
 
+CF677A - Vanya and Fence, 간단한 문제
+
 CF7A - Kalevich and chess, 간단한 맵 스위치 문제
 
 CF734A - Anton and Danik, 간단한 문제
@@ -480,7 +484,7 @@ SWE2930 - 힙, 힙을 구현하는 문제, 나중에 꼭 볼것
 
 SWE3304 - LCS
 
-게시된 문제 수: 240
+게시된 문제 수: 242
 못푼 문제 수: 18
 blog 게시 예정: 31
 
