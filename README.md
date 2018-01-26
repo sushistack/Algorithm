@@ -430,6 +430,10 @@ Hongik9 - Not Equal, (blog 게시 예정)
 
 Hongik10 - 전구 끄기, (진행중, blog 게시 예정)
 
+KakaoQualifying1 - 카카오 프렌즈 컬러링북, dfs, class에 대해서 한단계 배움
+
+KakaoQualifying2 - 보행자 천국, dp
+
 SWE1204 - 최빈수 구하기, 간단한 문제
 
 SWE1206 - view, 간단한 문제
@@ -484,7 +488,7 @@ SWE2930 - 힙, 힙을 구현하는 문제, 나중에 꼭 볼것
 
 SWE3304 - LCS
 
-게시된 문제 수: 242
+게시된 문제 수: 244
 못푼 문제 수: 18
 blog 게시 예정: 31
 
