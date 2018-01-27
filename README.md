@@ -260,6 +260,8 @@ CF118A - String task, 간단한 문제
 
 CF118D - caesar's Legions, 어려운 dp, 나중에 다시 해볼 것, (blog 게시 예정)
 
+CF119A - Epic Game, 간단한 문제
+
 CF12A - super agent, 간단한 문제
 
 CF122A - Lucky division, 간단한 문제
@@ -281,6 +283,8 @@ CF144A - Arrival of the general, 간단한 문제
 CF14D - Two path, 트리의 지름 + 트리 두개 운영하기
 
 CF148A - insomnia ure, 간단
+
+CF155A - I_love_\%username\%, 간단한 문제
 
 CF158A - next round, 간단
 
@@ -320,6 +324,8 @@ CF266A - Stone on the table, 간단한 문제
 
 CF268A - Game, 간단한 문제
 
+CF268B - Button, 간단
+
 CF271A - beautiful year, 전체 비교문제, 간단
 
 CF281A - Word capitalization, 간단
@@ -329,6 +335,8 @@ CF282A - Bit++, 간단한 문제
 CF2A - Winner, 해시로 승리자 찾기, 최대 값을 구하는 방법에 좀 의아한 점이 있음
 
 CF3A - shortest path of king, bfs 8방향 문제, bfs가 shortest path를 보장하는 이유는?
+
+CF313A - Ilya and Bank Account, 간단한 문제
 
 CF318A - even odds, 간단한 문제
 
@@ -348,11 +356,17 @@ CF41A - translation, 간단한 문제
 
 CF405A - Gravity Flip, 간단한 소팅
 
+CF427A - Design Tutorial: Learn from Math, 간단
+
+CF432A - Choosing Teams, 간단
+
 CF443A - Anton and Letters, 간단한 문제
 
 CF451A - Game with sticks, 간단한 문제지만 뭔가 이상하게 풀리는 문제
 
 CF460A - Vasya and socks, 간단한 문제
+
+CF466A - Cheap Travel, 간단
 
 CF467A - George and accommodation, 간단
 
@@ -360,9 +374,13 @@ CF469A - I wanna be the Guy, 간단한 문제
 
 CF472A - learn from math, 간단한 문제
 
+CF478A - Initial Bet, 간단
+
 CF479A - expression, 간단한 문제
 
 CF486A - Calculating function, 간단한 문제
+
+CF492A - Vanya and Cubes, 간단한 문제
 
 CF50A - domino piling, 간단한 문제
 
@@ -372,6 +390,8 @@ CF510A - Fox And Snake, 간단한 문제
 
 CF520A - Pangram, 간단한 문제
 
+CF540A - Combination Lock, 간단한 문제
+
 CF546A - soldier and bananas, 간단
 
 CF579A - Raising bacteria, 간단한 비트 마스크 문제
@@ -379,6 +399,10 @@ CF579A - Raising bacteria, 간단한 비트 마스크 문제
 CF58A - chat room, 간단
 
 CF580A - kefa and first steps, 규칙찾고 간단한 문제
+
+CF581A - Vasya the Hipster, 간단한 문제
+
+CF584A - Olesya and Rodion, 간단한 문제
 
 CF59A - Word, 간단
 
@@ -400,7 +424,15 @@ CF677A - Vanya and Fence, 간단한 문제
 
 CF7A - Kalevich and chess, 간단한 맵 스위치 문제
 
+CF705A - Hulk, 간단한 문제
+
+CF723A - The New Year: Meeting Friends, 간단한 문제
+
+CF732A - Buy a Shove, 간단한 문제
+
 CF734A - Anton and Danik, 간단한 문제
+
+CF750A - New Year and Hurry, 간단한 문제
 
 CF8A - train and peter, substring 판별 문제
 
@@ -409,6 +441,12 @@ CF82A - Double Cola, 약간 생각했던 문제, Math
 CF96A - Football, 간단
 
 CF9A - die roll, 간단한 문제
+
+CFER36A - Garden, 간단한 문제
+
+CFR458A - Perfect Squares, 간단한 문제
+
+CFR458B - Conan and Agasa play a Card Game, bit 연산 문제 확인 필요
 
 Hongik1 - 더하기, 단순
 
@@ -488,7 +526,7 @@ SWE2930 - 힙, 힙을 구현하는 문제, 나중에 꼭 볼것
 
 SWE3304 - LCS
 
-게시된 문제 수: 244
+게시된 문제 수: 263
 못푼 문제 수: 18
 blog 게시 예정: 31
 
