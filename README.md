@@ -310,6 +310,8 @@ CF228A - Is your horseshoe on the other hoof?, 간단한 문제
 
 CF230A - Dragons, 간단한 소팅
 
+CF230B - T-primes, 소수문제, 약간 어려웠음, 다시보길 권함.
+
 CF231A - team, 간단한 문제
 
 CF236A - Boy or girl, 간단한 문제
@@ -325,6 +327,8 @@ CF266A - Stone on the table, 간단한 문제
 CF268A - Game, 간단한 문제
 
 CF268B - Button, 간단
+
+CF270A - Fancy Fence, 수학공식을 요하는 문제, 정 다각형
 
 CF271A - beautiful year, 전체 비교문제, 간단
 
@@ -374,11 +378,17 @@ CF469A - I wanna be the Guy, 간단한 문제
 
 CF472A - learn from math, 간단한 문제
 
+CF474A - Keyboard, 간단
+
+CF476A - Dreamoon and Stairs, 간단
+
 CF478A - Initial Bet, 간단
 
 CF479A - expression, 간단한 문제
 
 CF486A - Calculating function, 간단한 문제
+
+CF490A - Team Olympiad, 간단
 
 CF492A - Vanya and Cubes, 간단한 문제
 
@@ -386,13 +396,21 @@ CF50A - domino piling, 간단한 문제
 
 CF500A - New year transportation, 간단한 그래프 문제
 
+CF509A - Maximum in Table, 간단
+
 CF510A - Fox And Snake, 간단한 문제
+
+CF519B - A and B and Compilation Errors, 간단
 
 CF520A - Pangram, 간단한 문제
 
 CF540A - Combination Lock, 간단한 문제
 
 CF546A - soldier and bananas, 간단
+
+CF556A - Case of the Zeros and Ones, 간단
+
+CF577A - Multiplication Tabl, 간단 
 
 CF579A - Raising bacteria, 간단한 비트 마스크 문제
 
@@ -405,6 +423,8 @@ CF581A - Vasya the Hipster, 간단한 문제
 CF584A - Olesya and Rodion, 간단한 문제
 
 CF59A - Word, 간단
+
+CF599A - Patrick and Shopping, 간단
 
 CF5A - chat server outgoing traffic, 간단한 String 문제
 
@@ -424,7 +444,13 @@ CF677A - Vanya and Fence, 간단한 문제
 
 CF7A - Kalevich and chess, 간단한 맵 스위치 문제
 
+CF703A - Mishka and Game,  간단
+
 CF705A - Hulk, 간단한 문제
+
+CF707A - Brain's Photos, 간단
+
+CF711A - Bus to Udayland, 간단
 
 CF723A - The New Year: Meeting Friends, 간단한 문제
 
@@ -433,6 +459,10 @@ CF732A - Buy a Shove, 간단한 문제
 CF734A - Anton and Danik, 간단한 문제
 
 CF750A - New Year and Hurry, 간단한 문제
+
+CF758A - Holiday Of Equality, 간단
+
+CF791A - Bear and Big Brother, 간단
 
 CF8A - train and peter, substring 판별 문제
 
@@ -526,7 +556,7 @@ SWE2930 - 힙, 힙을 구현하는 문제, 나중에 꼭 볼것
 
 SWE3304 - LCS
 
-게시된 문제 수: 263
+게시된 문제 수: 278
 못푼 문제 수: 18
 blog 게시 예정: 31
 
