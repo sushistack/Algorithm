@@ -342,6 +342,8 @@ CF3A - shortest path of king, bfs 8방향 문제, bfs가 shortest path를 보장
 
 CF313A - Ilya and Bank Account, 간단한 문제
 
+CF313B - Ilya and Queries, prefix을 응용한 문제
+
 CF318A - even odds, 간단한 문제
 
 CF337A - puzzles, 간단하진 않은 문제, 한번 다시 볼것
@@ -368,11 +370,15 @@ CF443A - Anton and Letters, 간단한 문제
 
 CF451A - Game with sticks, 간단한 문제지만 뭔가 이상하게 풀리는 문제
 
+CF459B - Pashmak and Flowers, combination and minmax
+
 CF460A - Vasya and socks, 간단한 문제
 
 CF466A - Cheap Travel, 간단
 
 CF467A - George and accommodation, 간단
+
+CF467B - Fedor and New Game, 비트마스크 문제
 
 CF469A - I wanna be the Guy, 간단한 문제
 
@@ -380,13 +386,19 @@ CF472A - learn from math, 간단한 문제
 
 CF474A - Keyboard, 간단
 
+CF474B - Worms, 인덱스 활용하기 문제
+
 CF476A - Dreamoon and Stairs, 간단
 
 CF478A - Initial Bet, 간단
 
+CF478B - Random Teams, combination
+
 CF479A - expression, 간단한 문제
 
 CF486A - Calculating function, 간단한 문제
+
+CF489B - BerSU Ball, dp로 풀려고 했다가 실패, 그리디하게 품, dp로 풀어볼것
 
 CF490A - Team Olympiad, 간단
 
@@ -458,6 +470,8 @@ CF732A - Buy a Shove, 간단한 문제
 
 CF734A - Anton and Danik, 간단한 문제
 
+CF734B - Anton and Digits, 간단
+
 CF750A - New Year and Hurry, 간단한 문제
 
 CF758A - Holiday Of Equality, 간단
@@ -477,6 +491,10 @@ CFER36A - Garden, 간단한 문제
 CFR458A - Perfect Squares, 간단한 문제
 
 CFR458B - Conan and Agasa play a Card Game, bit 연산 문제 확인 필요
+
+CFR459A - Eleven, 피보나치
+
+CFR459B - Radio station, 간단한 문제
 
 Hongik1 - 더하기, 단순
 
@@ -556,7 +574,7 @@ SWE2930 - 힙, 힙을 구현하는 문제, 나중에 꼭 볼것
 
 SWE3304 - LCS
 
-게시된 문제 수: 278
+게시된 문제 수: 287
 못푼 문제 수: 18
 blog 게시 예정: 31
 
