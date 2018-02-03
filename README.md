@@ -63,6 +63,8 @@
 
 1181 - 단어정렬, 간한단한 정렬
 
+1182 - 부분 집합의 합, dfs
+
 11866 - 조세퍼스문제, 원탁에서 번호 빼기 (큐 활용)
 
 1193 - 분수 찾기, 지그재그 스캔
@@ -101,6 +103,8 @@
 
 2448 - 별찍기, (진행중)
 
+2468 - 안전 영역, bfs 어렵지 않았음
+
 2577 - 숫자의 개수, 간단한 문자열 문제
 
 2579 - 계단 오르기, DP
@@ -133,6 +137,8 @@
 
 6591 - 이항쇼다운, 조합만들기 문제
 
+7562 - 나이트 이동, dfs 간단했음
+
 8958 - OX퀴즈, 간단한 계산
 
 9020 - 골드바흐 추측, 차이가 적은 소수 두개로 짝수 만들기
@@ -142,6 +148,8 @@
 9375 - 패션왕 신해빈, 이상한 문제 풀어볼 필요가 있음, (blog 게시 예정)
 
 9461 - 파도반 수열, 간단한 점화식 문제
+
+9466 - 텀 프로젝트, 사이클 찾기 dfs + finished 이용 꼭 볼 것
 
 1874 - 스택 수열
 
@@ -214,7 +222,7 @@
 
 1541 - 잃어버린 괄호, (blog 게시 예정)
 
-1783 - 병든 나이트, (진행중, blog 게시 예정)
+1783 - 병든 나이트, 숫자 놀음
 
 1939 - 중량 제한, (진행중, blog 게시 예정)
 
@@ -257,6 +265,8 @@ CF112A - Petya and Strings, 간단한 문제
 CF116A - Tram, 간단한 문제
 
 CF118A - String task, 간단한 문제
+
+CF118B -
 
 CF118D - caesar's Legions, 어려운 dp, 나중에 다시 해볼 것, (blog 게시 예정)
 
@@ -350,6 +360,8 @@ CF337A - puzzles, 간단하진 않은 문제, 한번 다시 볼것
 
 CF344A - Magnets,  간단한 문제
 
+CF363B -
+
 CF377A - Maze, dfs 문제
 
 CF379A - New Year Candles, 간단한 문제
@@ -370,11 +382,15 @@ CF443A - Anton and Letters, 간단한 문제
 
 CF451A - Game with sticks, 간단한 문제지만 뭔가 이상하게 풀리는 문제
 
+CF451B -
+
 CF459B - Pashmak and Flowers, combination and minmax
 
 CF460A - Vasya and socks, 간단한 문제
 
 CF466A - Cheap Travel, 간단
+
+CF466C -
 
 CF467A - George and accommodation, 간단
 
@@ -404,6 +420,8 @@ CF490A - Team Olympiad, 간단
 
 CF492A - Vanya and Cubes, 간단한 문제
 
+CF499B -
+
 CF50A - domino piling, 간단한 문제
 
 CF500A - New year transportation, 간단한 그래프 문제
@@ -415,6 +433,8 @@ CF510A - Fox And Snake, 간단한 문제
 CF519B - A and B and Compilation Errors, 간단
 
 CF520A - Pangram, 간단한 문제
+
+CF520B -
 
 CF540A - Combination Lock, 간단한 문제
 
@@ -460,6 +480,8 @@ CF703A - Mishka and Game,  간단
 
 CF705A - Hulk, 간단한 문제
 
+CF706B -
+
 CF707A - Brain's Photos, 간단
 
 CF711A - Bus to Udayland, 간단
@@ -467,6 +489,8 @@ CF711A - Bus to Udayland, 간단
 CF723A - The New Year: Meeting Friends, 간단한 문제
 
 CF732A - Buy a Shove, 간단한 문제
+
+CF732B -
 
 CF734A - Anton and Danik, 간단한 문제
 
@@ -488,6 +512,12 @@ CF9A - die roll, 간단한 문제
 
 CFER36A - Garden, 간단한 문제
 
+CFER37A -
+
+CFER37C -
+
+CFR457A -
+
 CFR458A - Perfect Squares, 간단한 문제
 
 CFR458B - Conan and Agasa play a Card Game, bit 연산 문제 확인 필요
@@ -495,6 +525,12 @@ CFR458B - Conan and Agasa play a Card Game, bit 연산 문제 확인 필요
 CFR459A - Eleven, 피보나치
 
 CFR459B - Radio station, 간단한 문제
+
+CFR460A -
+
+CFR460B - 
+
+CFR460C -
 
 Hongik1 - 더하기, 단순
 
@@ -506,7 +542,7 @@ Hongik4 - 용액합성하기, (blog 게시 예정)
 
 Hongik5 - 부분 평균, (blog 게시 예정)
 
-Hongik6 - 미로탈출, (진행중, blog 게시 예정)
+Hongik6 - 미로탈출, bfs 응용 문제, 어려웠음 다시 볼것
 
 Hongik7 - 폰노이만과 파리, 간단한 문제
 
@@ -574,7 +610,7 @@ SWE2930 - 힙, 힙을 구현하는 문제, 나중에 꼭 볼것
 
 SWE3304 - LCS
 
-게시된 문제 수: 287
-못푼 문제 수: 18
+게시된 문제 수: 307
+못푼 문제 수: 16
 blog 게시 예정: 31
 
