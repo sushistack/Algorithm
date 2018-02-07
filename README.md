@@ -15,6 +15,8 @@
 
 10250 - ACM 호텔, 간단한 규칙찾기 문제
 
+10597 - 순열장난, 백트래킹, 난해함 
+
 1065 - 한수, string으로 잘라서 판단하는 간단한 문제
 
 10718 - we love kriii, 단순 출력
@@ -37,11 +39,15 @@
 
 10989 - 수 정렬하기, 간단한 정렬
 
+11047 - 동전, 그리디
+
 11050 - 이항계수, 컴비네이션 구하기
 
 11051 - 이항계수, 컴비네이션 및 모듈러 
 
 11052 - 붕어빵 판매하기, 내가 풀었지만 운이 좋았던 문제, DP
+
+11066 - 파일 합치기, dp, knuth's optimization
 
 1110 - 더하기 사이클, 자리수대로 값을 더해서 사이클의 주기찾기
 
@@ -83,13 +89,21 @@
 
 1676 - 팩토리얼 0의 개수, 2, 5 찾기 문제
 
+1699 - 제곱수의 합, 백트래킹
+
+1759 - 암호 만들기, 백트래킹, 처음에 이해를 잘 못함.
+
 1912 - 연속합, prefix로 풀었다가 안풀려서 DP로 푼 문제, reference를 봤기때문에 다시봐야 함.
 
 1929 - 소수구하기, 간단한 소수 구하기
 
 1932 - 숫자 삼각형, 간단한 dp 문제
 
+1949 - 우수마을, tree + dp
+
 1978 - 소수 찾기, 소수 구하는 문제
+
+1987 - 알파벳, 백트래킹
 
 2108 - 통계학, 반올림에 대한 체크 필요
 
@@ -98,6 +112,8 @@
 2292 - 벌집, 간단한 규칙찾기
 
 2293 - 동전, 경우의 수를 구하는 문제, DP 생각하기 어려웠음, 다시 풀어봐야함.
+
+2294 - 동전2, dp
 
 2407 - 조합, BigInteger 사용문제
 
@@ -112,6 +128,8 @@
 2580 - 스도쿠, 백트레킹, cut branch (blog 게시 예정)
 
 2581 - 소수, 간단한 소수 구하기
+
+2661 - 좋은 수열, 백트래킹
 
 2675 - 문자열 반복, 간단한 문자열 문제
 
@@ -190,6 +208,8 @@
 
 9498 - 시험, 간단한 조건문 처리 문제
 
+9663 - N-Queens, 백트래킹
+
 9726 - negative binary, (진행중, blog 게시 예정)
 
 10815 - 숫자카드, 카드 매칭하기 문제
@@ -198,7 +218,7 @@
 
 11718 - 그대로 출력하기, 간단한 입력 문제
 
-1182 - 부분집합의 합, (진행중, blog 게시 예정)
+1182 - 부분집합의 합
 
 13303 - 장애물 경기, (진행중, blog 게시 예정)
 
@@ -266,7 +286,7 @@ CF116A - Tram, 간단한 문제
 
 CF118A - String task, 간단한 문제
 
-CF118B -
+CF118B - Present from Lena, 노가다 문제
 
 CF118D - caesar's Legions, 어려운 dp, 나중에 다시 해볼 것, (blog 게시 예정)
 
@@ -360,7 +380,7 @@ CF337A - puzzles, 간단하진 않은 문제, 한번 다시 볼것
 
 CF344A - Magnets,  간단한 문제
 
-CF363B -
+CF363B - Fence, 간단한 문제
 
 CF377A - Maze, dfs 문제
 
@@ -382,7 +402,7 @@ CF443A - Anton and Letters, 간단한 문제
 
 CF451A - Game with sticks, 간단한 문제지만 뭔가 이상하게 풀리는 문제
 
-CF451B -
+CF451B - Sort the Array, 맞나 싶게 풀린 문제, 다시 볼것
 
 CF459B - Pashmak and Flowers, combination and minmax
 
@@ -390,7 +410,7 @@ CF460A - Vasya and socks, 간단한 문제
 
 CF466A - Cheap Travel, 간단
 
-CF466C -
+CF466C - Number of Ways, 어려웠던 문제 
 
 CF467A - George and accommodation, 간단
 
@@ -420,7 +440,7 @@ CF490A - Team Olympiad, 간단
 
 CF492A - Vanya and Cubes, 간단한 문제
 
-CF499B -
+CF499B - Lecture, 간단한 문제
 
 CF50A - domino piling, 간단한 문제
 
@@ -434,7 +454,7 @@ CF519B - A and B and Compilation Errors, 간단
 
 CF520A - Pangram, 간단한 문제
 
-CF520B -
+CF520B - Two Buttons, 이동하는 문제, dp
 
 CF540A - Combination Lock, 간단한 문제
 
@@ -480,7 +500,7 @@ CF703A - Mishka and Game,  간단
 
 CF705A - Hulk, 간단한 문제
 
-CF706B -
+CF706B - Interesting drink, binary search 엄청 헤맸던 문제
 
 CF707A - Brain's Photos, 간단
 
@@ -490,7 +510,7 @@ CF723A - The New Year: Meeting Friends, 간단한 문제
 
 CF732A - Buy a Shove, 간단한 문제
 
-CF732B -
+CF732B - Cormen --- The Best Friend Of a Man, greedy 문제
 
 CF734A - Anton and Danik, 간단한 문제
 
@@ -512,11 +532,11 @@ CF9A - die roll, 간단한 문제
 
 CFER36A - Garden, 간단한 문제
 
-CFER37A -
+CFER37A - warter garden, 간단
 
-CFER37C -
+CFER37C - Swap Adjacent Elements, 인덱스찾기, bianry search, prefix sum
 
-CFR457A -
+CFR457A - Jamie and Alarm Snooze, 간단
 
 CFR458A - Perfect Squares, 간단한 문제
 
@@ -526,21 +546,21 @@ CFR459A - Eleven, 피보나치
 
 CFR459B - Radio station, 간단한 문제
 
-CFR460A -
+CFR460A - Supermarket, 간단한 문제
 
-CFR460B - 
+CFR460B - Perfect Number, 맞나 싶을정도로 느렸던 문제
 
-CFR460C -
+CFR460C - Seat Arrangements, prefix sum
 
 Hongik1 - 더하기, 단순
 
-Hongik2 - 분포표 만들기, (진행중, blog 게시 예정)
+Hongik2 - 분포표 만들기
 
 Hongik3 - 3n + 1 수열, 간단
 
-Hongik4 - 용액합성하기, (blog 게시 예정)
+Hongik4 - 용액합성하기
 
-Hongik5 - 부분 평균, (blog 게시 예정)
+Hongik5 - 부분 평균
 
 Hongik6 - 미로탈출, bfs 응용 문제, 어려웠음 다시 볼것
 
@@ -610,7 +630,7 @@ SWE2930 - 힙, 힙을 구현하는 문제, 나중에 꼭 볼것
 
 SWE3304 - LCS
 
-게시된 문제 수: 307
-못푼 문제 수: 16
-blog 게시 예정: 31
+게시된 문제 수: 314
+못푼 문제 수: 15
+blog 게시 예정: 28
 
