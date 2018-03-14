@@ -2,7 +2,6 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.PriorityQueue;
 
 public class SWE1251 {
     static int t, T, n, x[] = new int[1001], y[] = new int[1001], uf[] = new int[1001], count;
@@ -51,9 +50,6 @@ public class SWE1251 {
         bw.flush();bw.close();
     }
 
-    public static void kruskal() {
-
-    }
 
     public static int find(int a){
         if(uf[a] < 0) return a;
