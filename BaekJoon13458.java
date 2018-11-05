@@ -1,23 +1,31 @@
-import java.util.Scanner;
+import java.io.*;
+import java.util.StringTokenizer;
 
 public class BaekJoon13458 {
-    static long N, B, C, count;
-    static long[] A = new long[1000005];
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);count = 0;
-        N = sc.nextInt();
-        for (int i = 0; i < N; i++) {
-            A[i] = sc.nextInt();
+    static int n, a[] = new int[1000001], b, c, v;
+    static String ins[];
+    public static void main(String[] args) throws IOException {
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        n = Integer.parseInt(br.readLine());
+        StringTokenizer st;
+        st = new StringTokenizer(br.readLine(), " ");
+        while(st.hasMoreTokens()) {
+            a[v++] = Integer.parseInt(st.nextToken());
         }
-        B = sc.nextInt();C = sc.nextInt();
-        for (int i = 0; i < N; i++) {
-            A[i] -= B;count++;
-            if (A[i] > 0) {
-                long temp = A[i] / C;
-                A[i] -= C * temp;count += temp;
-                if (A[i] > 0) count++;
-            }
+        ins = br.readLine().split(" ");
+        b = Integer.parseInt(ins[0]);
+        c = Integer.parseInt(ins[1]);
+        long ans = 0;
+        for (int i = 0; i < n; i++) {
+            ans += 1;
+            a[i] -= b;
+            if (a[i] < 0) continue;
+            ans += a[i] / c;
+            ans += (a[i] % c == 0) ? 0 : 1;
         }
-        System.out.println(count);
+
+        bw.write(ans + "\n");
+        bw.flush();bw.close();
     }
 }

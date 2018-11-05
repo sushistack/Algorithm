@@ -1,0 +1,621 @@
+<form name="frmSugang" method="post">
+    <input type="hidden" name="strSaveCheck" value="N">
+    <input type="hidden" name="strBrowser" value="">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td align="center">
+
+                <TABLE CELLPADDING="0" CELLSPACING="0" BORDER="0" WIDTH="95%">
+                    <TR>
+                        <TD align=left>
+                            <TABLE CLASS="table_bg" CELLPADDING="0" CELLSPACING="1" BORDER="0" WIDTH="100%">
+                                <TR>
+                                    <TD CLASS="table_color_bright_center" WIDTH="100">수강년도/학기</TD>
+                                    <TD CLASS="table_bg_white" WIDTH="100" align=center>2018/1학기</TD>
+                                    <TD CLASS="table_color_bright_center" WIDTH="40">학번</TD>
+                                    <TD CLASS="table_bg_white" WIDTH="100" align=center>201211264</TD>
+                                    <TD CLASS="table_color_bright_center" WIDTH="40">성명</TD>
+                                    <TD CLASS="table_bg_white" WIDTH="100" align=center>김종민</TD>
+                                    <TD CLASS="table_color_bright_center" WIDTH="100">학부(과)/전공</TD>
+                                    <TD CLASS="table_bg_white" WIDTH="150" align=center>소프트웨어학과</TD>
+                                </TR>
+                            </table>
+                        </TD>
+                    </TR>
+                </TABLE>
+                <table height=1><tr><td></td></tr></table>
+
+                <TABLE CLASS="table_bg" CELLPADDING="0" CELLSPACING="1" BORDER="0" WIDTH="95%">
+                    <TR>
+                        <TD CLASS="table_color_bright_center" WIDTH="10%">부전공</TD>
+                        <TD CLASS="table_bg_white" WIDTH="15%" align=center></TD>
+                        <TD CLASS="table_color_bright_center" WIDTH="10%">다전공</TD>
+                        <TD CLASS="table_bg_white" WIDTH="15%" align=center></TD>
+                        <TD CLASS="table_color_bright_center" WIDTH="20%">연계/연합/교직연계전공</TD>
+                        <TD CLASS="table_bg_white" WIDTH="15%" align=center>  </TD>
+                        <TD CLASS="table_color_bright_center" WIDTH="10%">교직여부</TD>
+                        <TD CLASS="table_bg_white" WIDTH="10%" align=center></TD>
+                    </TR>
+                </TABLE>
+
+                <!--
+                      </td>
+                      <TD ALIGN="RIGHT" HEIGHT="20" width="70">11
+                      </TD>
+                    </tr>
+                  </table>
+                -->
+                <table height="1"><tr><td></td></tr></table>
+                <table width="95%">
+                    <tr>
+                        <TD><B>▼ 수강신청 과목</B></TD>
+                        <TD align="left">
+
+                            과목번호 입력
+                            <input type=text size="6" maxlength="4" alt="과목번호" name="strSbjtId" onkeydown="EnterKeyEvent('set');" style="border-width:1;border-color:#BDBDBD;border-style:solid;background-color:#FFFFFF;">
+                            <font color="red"><b>* 적색 이탤릭체 교과목은 반드시 저장버튼을 클릭하셔야 저장됩니다.</b></font>
+
+                        </TD>
+                        <TD ALIGN="LEFT" HEIGHT="20" width="70">
+                            <input name="new" type="button" class="button_nav" onMouseOver="this.style.color='#000000';" onMouseOut="this.style.color='#547585'" value="저장" onClick="javaScript:actEvent('set')" />
+                        </TD>
+                    </tr>
+                </table>
+                <DIV ID="SugangDiv" STYLE="BORDER-STYLE:SOLID; BORDER:1; WIDTH:95%; HEIGHT:180; OVERFLOW:AUTO;">
+
+                    <TABLE CLASS="table_bg" CELLPADDING="0" CELLSPACING="1" BORDER="0" WIDTH="100%">
+                        <TR CLASS="table_header_center">
+                            <TD WIDTH="4%"><font color="red"><B>삭제</B></font></TD>
+                            <TD WIDTH="4%">학년</TD>
+                            <TD WIDTH="8%">이수구분</TD>
+                            <TD WIDTH="8%">과목번호</TD>
+                            <TD WIDTH="15%">교과목명</TD>
+                            <TD WIDTH="4%">학점</TD>
+                            <TD WIDTH="4%">시간</TD>
+                            <TD WIDTH="30%">강의요일/시간</TD>
+                            <TD WIDTH="15%">담당교수</TD>
+                            <TD WIDTH="8%">중복수강</TD>
+                            <!-- <TD>신청/제한인원</TD> -->
+                            <!-- <TD WIDTH="10%">비고</TD> -->
+                        </TR>
+                        <TBODY id="oTbody">
+
+                        <TR CLASS="table_bg_white" style="cursor:hand">
+                            <TD align=center>
+                                <input type=checkbox name="deldirect" onClick='return delCuri();'>
+                                <input type=checkbox  style='display:none' name='del'  value='Y'>
+                                <input type=checkbox  style='display:none' name='new1' value='N'>
+                                <input type=checkbox  style='display:none' name='arg_sbjt_id'    value='1248'>
+                                <input type=checkbox  style='display:none' name='arg_haksu_id'   value='BKSA54994'>
+                                <input type=checkbox  style='display:none' name='arg_pobt_div'   value='B0404P'>
+                                <input type=checkbox  style='display:none' name='arg_pnt'        value='2'>
+                                <input type=checkbox  style='display:none' name='arg_tm'         value='2'>
+                                <input type=checkbox  style='display:none' name='arg_camp_fg'    value=''>
+                                <input type=checkbox  style='display:none' name='arg_sust'       value='126841'>
+                                <input type=checkbox  style='display:none' name='arg_shyr'       value=''>
+                                <input type=checkbox  style='display:none' name='arg_clss_no'    value='02'>
+                            </TD>
+                            <a href="#">
+                                <TD align=center></TD>
+                                <TD align=center>기교</TD>
+                                <TD align=center>1248</TD>
+                                <TD>실전취업특강</TD>
+                                <TD align=center>2</TD>
+                                <TD align=center>2</TD>
+                                <TD> 목05-08(신공B106)</TD>
+                                <TD> 미배정</TD>
+                                <!-- <TD>3,4학년 대상</TD> -->
+                                <TD align=center></TD>
+                            </a>
+                        </TR>
+
+                        </TBODY>
+                    </TABLE>
+                </DIV>
+            </td>
+        </tr>
+    </table>
+
+    <input type="hidden" name="strKcuCount" value="0">
+    <input type="hidden" name='CuriCdtWarnFg' value='2.0'>
+    <table height=1><tr><td></td></tr></table>
+    <TABLE align="center" CELLPADDING="0" CELLSPACING="0" BORDER="0" WIDTH="95%">
+        <TR>
+            <TD align="center">
+                <TABLE CLASS="table_bg" CELLPADDING="0" CELLSPACING="1" BORDER="0" WIDTH="100%">
+                    <TR>
+                        <TD CLASS="table_color_bright_center" WIDTH="90">최소신청과목수</TD>
+                        <TD CLASS="table_color_bright_center" WIDTH="100">현재신청과목수</TD>
+                        <TD CLASS="table_color_bright_center" WIDTH="90">현재신청학점</TD>
+                        <TD CLASS="table_color_bright_center" WIDTH="90">최대한도학점</TD>
+
+                        <!-- 계절학기 수강신청때는 수강이월학점과 직전학기 성적을 보여주지 않는다 - 2010년 11월 이우광,이민경-->
+                        <TD CLASS="table_color_bright_center" WIDTH="90">수강이월학점</TD>
+
+                        <TD CLASS="table_color_bright_center" WIDTH="90">직전학기성적<BR>(취득학점포기전)</TD>
+                    </TR>
+                    <TR>
+                        <TD CLASS="table_bg_white" WIDTH="60" align=center><INPUT TYPE="TEXT" NAME="MinCuriCnt" SIZE="1" VALUE="1" READONLY class="ctl_enabled"> 과목</TD>
+                        <TD CLASS="table_bg_white" WIDTH="60" align=center><INPUT TYPE="TEXT" NAME="CuriCnt" SIZE="3" VALUE="1" READONLY class="ctl_enabled">과목</TD>
+                        <TD CLASS="table_bg_white" WIDTH="60" align=center><INPUT TYPE="TEXT" NAME="CuriCdt" SIZE="3" VALUE="2.0" READONLY class="ctl_enabled">학점</TD>
+                        <TD CLASS="table_bg_white" WIDTH="60" align=center><INPUT TYPE="TEXT" NAME="CuriMax" SIZE="3" VALUE="18" READONLY class="ctl_enabled">학점</TD>
+
+                        <TD CLASS="table_bg_white" WIDTH="60" align=center><INPUT TYPE="TEXT" NAME="CuriAdd" SIZE="3" VALUE="0" READONLY class="ctl_enabled">학점</TD>
+
+                        <TD CLASS="table_bg_white" WIDTH="60" align=center><INPUT TYPE="TEXT" NAME="PreSngj" SIZE="3" VALUE="3.59" READONLY class="ctl_enabled"></TD>
+                    </TR>
+                </TABLE>
+            </td>
+            <TD ALIGN="center" HEIGHT="20">
+            </TD>
+        </tr>
+    </table>
+
+    <table height="1"><tr><td></td></tr></table>
+    <table width="95%" BORDER = "0">
+        <tr>
+            <TD ALIGN="center" width = "15">&nbsp</TD>
+            <TD><B>▼ 수강바구니 과목</B></TD>
+        </tr>
+    </table>
+    <DIV ID="SugangDiv" STYLE="BORDER-STYLE:SOLID; BORDER:1; WIDTH:100%; HEIGHT:180; OVERFLOW:AUTO;">
+        <TABLE CLASS="table_bg" CELLPADDING="0" CELLSPACING="1" BORDER="0" WIDTH="95%" align = "center">
+            <TR CLASS="table_header_center">
+                <TD WIDTH="4%">학년</TD>
+                <TD WIDTH="7%">이수구분</TD>
+                <TD WIDTH="7%">과목번호</TD>
+                <TD WIDTH="20%">교과목명</TD>
+                <TD WIDTH="4%">학점</TD>
+                <TD WIDTH="4%">시간</TD>
+                <TD WIDTH="30%">강의요일/시간</TD>
+                <TD WIDTH="12%">담당교수</TD>
+                <TD WIDTH="5%">신청</TD>
+                <TD WIDTH="7%">중복수강</TD>
+                <!-- <TD>신청/제한인원</TD> -->
+                <!-- <TD WIDTH="10%">비고</TD> -->
+            </TR>
+
+            <TR CLASS="table_bg_white" style="cursor:hand">
+                <a href="#">
+                    <TD align=center>9</TD>
+                    <TD align=center>일선</TD>
+                    <TD align=center>0722</TD>
+                    <TD>아트플레이:이미지로생각하다</TD>
+                    <TD align=center>1</TD>
+                    <TD align=center>1</TD>
+                    <TD></TD>
+                    <TD> 이주은</TD>
+                </a>
+                <TD align=center>
+                    <input name="basketAply" type="button" class="button_nav" onMouseOver="this.style.color='#000000';" onMouseOut="this.style.color='#547585'" value="신청" onClick="javaScript:actBasEvent('0722')"/>
+                </TD>
+                <TD align=center></TD>
+            </TR>
+
+            <TR CLASS="table_bg_white" style="cursor:hand">
+                <a href="#">
+                    <TD align=center>9</TD>
+                    <TD align=center>일선</TD>
+                    <TD align=center>0723</TD>
+                    <TD>다시찾는조선의역사와인물</TD>
+                    <TD align=center>1</TD>
+                    <TD align=center>1</TD>
+                    <TD></TD>
+                    <TD> 신병주</TD>
+                </a>
+                <TD align=center>
+                    <input name="basketAply" type="button" class="button_nav" onMouseOver="this.style.color='#000000';" onMouseOut="this.style.color='#547585'" value="신청" onClick="javaScript:actBasEvent('0723')"/>
+                </TD>
+                <TD align=center></TD>
+            </TR>
+
+            <TR CLASS="table_bg_white" style="cursor:hand">
+                <a href="#">
+                    <TD align=center>9</TD>
+                    <TD align=center>심교</TD>
+                    <TD align=center>1408</TD>
+                    <TD>대중소비사회와소비자교육</TD>
+                    <TD align=center>2</TD>
+                    <TD align=center>2</TD>
+                    <TD>(e-러닝)</TD>
+                    <TD> 김시월, 김혜연</TD>
+                </a>
+                <TD align=center>
+                    <input name="basketAply" type="button" class="button_nav" onMouseOver="this.style.color='#000000';" onMouseOut="this.style.color='#547585'" value="신청" onClick="javaScript:actBasEvent('1408')"/>
+                </TD>
+                <TD align=center></TD>
+            </TR>
+
+            <TR CLASS="table_bg_white" style="cursor:hand">
+                <a href="#">
+                    <TD align=center>9</TD>
+                    <TD align=center>심교</TD>
+                    <TD align=center>1409</TD>
+                    <TD>대화의기법</TD>
+                    <TD align=center>2</TD>
+                    <TD align=center>2</TD>
+                    <TD> 월13-16(종강210)</TD>
+                    <TD> 정수현</TD>
+                </a>
+                <TD align=center>
+                    <input name="basketAply" type="button" class="button_nav" onMouseOver="this.style.color='#000000';" onMouseOut="this.style.color='#547585'" value="신청" onClick="javaScript:actBasEvent('1409')"/>
+                </TD>
+                <TD align=center></TD>
+            </TR>
+
+            <TR CLASS="table_bg_white" style="cursor:hand">
+                <a href="#">
+                    <TD align=center>9</TD>
+                    <TD align=center>심교</TD>
+                    <TD align=center>1441</TD>
+                    <TD>영양과생활</TD>
+                    <TD align=center>2</TD>
+                    <TD align=center>2</TD>
+                    <TD> 수13-16(종강202)</TD>
+                    <TD> 박미영</TD>
+                </a>
+                <TD align=center>
+                    <input name="basketAply" type="button" class="button_nav" onMouseOver="this.style.color='#000000';" onMouseOut="this.style.color='#547585'" value="신청" onClick="javaScript:actBasEvent('1441')"/>
+                </TD>
+                <TD align=center></TD>
+            </TR>
+
+            <TR CLASS="table_bg_white" style="cursor:hand">
+                <a href="#">
+                    <TD align=center>9</TD>
+                    <TD align=center>심교</TD>
+                    <TD align=center>1465</TD>
+                    <TD>현대인과정신건강</TD>
+                    <TD align=center>2</TD>
+                    <TD align=center>2</TD>
+                    <TD> 금05-08(종강208)</TD>
+                    <TD> 강지은</TD>
+                </a>
+                <TD align=center>
+                    <input name="basketAply" type="button" class="button_nav" onMouseOver="this.style.color='#000000';" onMouseOut="this.style.color='#547585'" value="신청" onClick="javaScript:actBasEvent('1465')"/>
+                </TD>
+                <TD align=center></TD>
+            </TR>
+
+            <TR CLASS="table_bg_white" style="cursor:hand">
+                <a href="#">
+                    <TD align=center>9</TD>
+                    <TD align=center>심교</TD>
+                    <TD align=center>1605</TD>
+                    <TD>요가와명상</TD>
+                    <TD align=center>2</TD>
+                    <TD align=center>2</TD>
+                    <TD> 수05-08(실내체육관)</TD>
+                    <TD> 임기원, 이태인</TD>
+                </a>
+                <TD align=center>
+                    <input name="basketAply" type="button" class="button_nav" onMouseOver="this.style.color='#000000';" onMouseOut="this.style.color='#547585'" value="신청" onClick="javaScript:actBasEvent('1605')"/>
+                </TD>
+                <TD align=center></TD>
+            </TR>
+
+            <TR CLASS="table_bg_white" style="cursor:hand">
+                <a href="#">
+                    <TD align=center>9</TD>
+                    <TD align=center>심교</TD>
+                    <TD align=center>1612</TD>
+                    <TD>3D프린팅의이해와실습</TD>
+                    <TD align=center>3</TD>
+                    <TD align=center>3</TD>
+                    <TD> 금13-18(새402)</TD>
+                    <TD> 이철규</TD>
+                </a>
+                <TD align=center>
+                    <input name="basketAply" type="button" class="button_nav" onMouseOver="this.style.color='#000000';" onMouseOut="this.style.color='#547585'" value="신청" onClick="javaScript:actBasEvent('1612')"/>
+                </TD>
+                <TD align=center></TD>
+            </TR>
+
+            <TR CLASS="table_bg_white" style="cursor:hand">
+                <a href="#">
+                    <TD align=center>9</TD>
+                    <TD align=center>심교</TD>
+                    <TD align=center>1632</TD>
+                    <TD>소비자마음읽기</TD>
+                    <TD align=center>2</TD>
+                    <TD align=center>2</TD>
+                    <TD>(e-러닝)</TD>
+                    <TD> 김시월, 김영석</TD>
+                </a>
+                <TD align=center>
+                    <input name="basketAply" type="button" class="button_nav" onMouseOver="this.style.color='#000000';" onMouseOut="this.style.color='#547585'" value="신청" onClick="javaScript:actBasEvent('1632')"/>
+                </TD>
+                <TD align=center></TD>
+            </TR>
+
+            <TR CLASS="table_bg_white" style="cursor:hand">
+                <a href="#">
+                    <TD align=center>9</TD>
+                    <TD align=center>심교</TD>
+                    <TD align=center>1645</TD>
+                    <TD>통일의인문학적이해</TD>
+                    <TD align=center>2</TD>
+                    <TD align=center>2</TD>
+                    <TD>(e-러닝)</TD>
+                    <TD> 김종곤, 박재인, 전영선</TD>
+                </a>
+                <TD align=center>
+                    <input name="basketAply" type="button" class="button_nav" onMouseOver="this.style.color='#000000';" onMouseOut="this.style.color='#547585'" value="신청" onClick="javaScript:actBasEvent('1645')"/>
+                </TD>
+                <TD align=center></TD>
+            </TR>
+
+            <TR CLASS="table_bg_white" style="cursor:hand">
+                <a href="#">
+                    <TD align=center>2</TD>
+                    <TD align=center>일선</TD>
+                    <TD align=center>3396</TD>
+                    <TD>컴퓨터응용및실습1</TD>
+                    <TD align=center>3</TD>
+                    <TD align=center>4</TD>
+                    <TD> 목11-14(새303), 금11-14(새303)</TD>
+                    <TD> 최윤정, 장천현</TD>
+                </a>
+                <TD align=center>
+                    <input name="basketAply" type="button" class="button_nav" onMouseOver="this.style.color='#000000';" onMouseOut="this.style.color='#547585'" value="신청" onClick="javaScript:actBasEvent('3396')"/>
+                </TD>
+                <TD align=center></TD>
+            </TR>
+
+        </TABLE>
+    </DIV>
+    </td>
+    </tr>
+    </table>
+    <table height="1"><tr><td></td></tr></table>
+    <table width="95%">
+        <tr>
+            <TD width="15"></TD>
+            <TD><B>▼ 과목 검색</B></TD>
+        </tr>
+    </table>
+    <!-- 과목검색조건 -->
+    <TABLE align="center" CELLPADDING="0" CELLSPACING="0" BORDER="0" WIDTH="95%">
+        <TR>
+            <TD align=center>
+                <TABLE CLASS="table_bg" CELLPADDING="0" CELLSPACING="1" BORDER="0" WIDTH="100%">
+                    <TR>
+                        <TD CLASS="table_color_bright_center">검색조건</TD>
+                        <TD CLASS="table_bg_white">
+                            <input type="radio" name="Schdiv" onClick="setdiv(1);" value="1" checked>교과목명
+                            <input type="radio" name="Schdiv" onClick="setdiv(2);" value="2" >수강학과
+
+
+                            <input type="radio" name="Schdiv" onClick="setdiv(4);" value="4" >지정교양
+                        </TD>
+                        <TD CLASS="table_color_bright_center">
+                            <div id="layer1" STYLE="display:inline;">교과목명</div>
+                            <div id="layer2" STYLE="display:none;">수강학과</div>
+                        </TD>
+                        <TD CLASS="table_bg_white">
+                            <div id="layer3" STYLE="display:inline;">
+                                <input type="text" name="strCorsNm" WIDTH="100%" maxlength="10" alt="교과목명" value="" onkeydown="EnterKeyEvent('curi');" class="ctl_enabled" style="ime-mode:active">
+                            </div>
+                            <div id="layer4" STYLE="display:none;">
+                                <SELECT name="strDeptCd" class="ctl_enabled">
+                                    <OPTION VALUE="">선택</OPTION>
+
+                                    <OPTION VALUE="006751" >전체대학 </option>
+                                    <OPTION VALUE="126897" >KU융합과학기술원 </option>
+                                    <OPTION VALUE="127117" >K뷰티산업융합학과 </option>
+                                    <OPTION VALUE="105291" >건축공학부 </option>
+                                    <OPTION VALUE="105321" >건축공학전공 </option>
+                                    <OPTION VALUE="121135" >건축공학전공 </option>
+                                    <OPTION VALUE="121134" >건축설계전공 </option>
+                                    <OPTION VALUE="126784" >건축학과 </option>
+                                    <OPTION VALUE="121133" >건축학부 </option>
+                                    <OPTION VALUE="105561" >경영·경영정보학부 </option>
+                                    <OPTION VALUE="105541" >경영대학 </option>
+                                    <OPTION VALUE="105611" >경영정보학전공 </option>
+                                    <OPTION VALUE="126780" >경영학과 </option>
+                                    <OPTION VALUE="105591" >경영학전공 </option>
+                                    <OPTION VALUE="126790" >경제학과 </option>
+                                    <OPTION VALUE="127121" >경제학과 </option>
+                                    <OPTION VALUE="103851" >경제학전공 </option>
+                                    <OPTION VALUE="103041" >공과대학 </option>
+                                    <OPTION VALUE="122080" >공예학과 </option>
+                                    <OPTION VALUE="122409" >공예학과 </option>
+                                    <OPTION VALUE="105251" >공통과학 </option>
+                                    <OPTION VALUE="103751" >공통사회 </option>
+                                    <OPTION VALUE="105031" >교육공학과 </option>
+                                    <OPTION VALUE="121253" >국어국문학과 </option>
+                                    <OPTION VALUE="126782" >국제무역학과 </option>
+                                    <OPTION VALUE="127123" >국제무역학과 </option>
+                                    <OPTION VALUE="103901" >국제무역학전공 </option>
+                                    <OPTION VALUE="103912" >국제비지니스학연합전공 </option>
+                                    <OPTION VALUE="127033" >글로벌MICE연계전공 </option>
+                                    <OPTION VALUE="127126" >글로벌비즈니스학과 </option>
+                                    <OPTION VALUE="126796" >글로벌비즈니스학부 </option>
+                                    <OPTION VALUE="126777" >기계공학과 </option>
+                                    <OPTION VALUE="127109" >기계공학부 </option>
+                                    <OPTION VALUE="003221" >기계공학전공 </option>
+                                    <OPTION VALUE="121174" >기술경영학과 </option>
+                                    <OPTION VALUE="127118" >기술융합공학과 </option>
+                                    <OPTION VALUE="122102" >녹지환경계획학과 </option>
+                                    <OPTION VALUE="122096" >동물생명공학과 </option>
+                                    <OPTION VALUE="120806" >동물생명과학부 </option>
+                                    <OPTION VALUE="122098" >동물자원과학과 </option>
+                                    <OPTION VALUE="126907" >동물자원과학과 </option>
+                                    <OPTION VALUE="121012" >디스플레이공학연계전공 </option>
+                                    <OPTION VALUE="126781" >리빙디자인학과 </option>
+                                    <OPTION VALUE="102761" >문과대학 </option>
+                                    <OPTION VALUE="121259" >문화콘텐츠학과 </option>
+                                    <OPTION VALUE="126783" >물리학과 </option>
+                                    <OPTION VALUE="121242" >물리학부 </option>
+                                    <OPTION VALUE="121243" >물리학전공 </option>
+                                    <OPTION VALUE="122281" >미디어커뮤니케이션학과 </option>
+                                    <OPTION VALUE="126913" >미래에너지공학과 </option>
+                                    <OPTION VALUE="122099" >바이오산업공학과 </option>
+                                    <OPTION VALUE="122101" >보건환경과학과 </option>
+                                    <OPTION VALUE="103741" >부동산학과 </option>
+                                    <OPTION VALUE="126905" >부동산학과 </option>
+                                    <OPTION VALUE="104601" >분자생명공학전공 </option>
+                                    <OPTION VALUE="104951" >사범대학 </option>
+                                    <OPTION VALUE="121257" >사학과 </option>
+                                    <OPTION VALUE="127119" >사회과학대학 </option>
+                                    <OPTION VALUE="127108" >사회환경공학부 </option>
+                                    <OPTION VALUE="122100" >사회환경시스템공학과 </option>
+                                    <OPTION VALUE="126792" >사회환경플랜트공학과 </option>
+                                    <OPTION VALUE="126901" >사회환경플랜트공학과 </option>
+                                    <OPTION VALUE="126912" >산림조경학과 </option>
+                                    <OPTION VALUE="122227" >산업공학과 </option>
+                                    <OPTION VALUE="122403" >산업디자인학과 </option>
+                                    <OPTION VALUE="103781" >상경대학 </option>
+                                    <OPTION VALUE="122048" >생명과학전공 </option>
+                                    <OPTION VALUE="126793" >생명과학특성학과 </option>
+                                    <OPTION VALUE="126906" >생명과학특성학과 </option>
+                                    <OPTION VALUE="122047" >생명과학특성학부 </option>
+                                    <OPTION VALUE="122104" >생명자원식품공학과 </option>
+                                    <OPTION VALUE="122055" >생물공학과 </option>
+                                    <OPTION VALUE="103391" >섬유공학과 </option>
+                                    <OPTION VALUE="120726" >소비자정보학과 </option>
+                                    <OPTION VALUE="121218" >소비자정보학전공 </option>
+                                    <OPTION VALUE="126903" >소프트웨어학과 </option>
+                                    <OPTION VALUE="127113" >소프트웨어학과 </option>
+                                    <OPTION VALUE="105061" >수의과대학 </option>
+                                    <OPTION VALUE="105091" >수의예과 </option>
+                                    <OPTION VALUE="105101" >수의학과 </option>
+                                    <OPTION VALUE="121260" >수학과 </option>
+                                    <OPTION VALUE="104991" >수학교육과 </option>
+                                    <OPTION VALUE="126915" >스마트ICT융합공학과 </option>
+                                    <OPTION VALUE="126914" >스마트운행체공학과 </option>
+                                    <OPTION VALUE="122071" >시각·멀티미디어디자인전공 </option>
+                                    <OPTION VALUE="126919" >시스템생명공학과 </option>
+                                    <OPTION VALUE="122050" >시스템생명공학전공 </option>
+                                    <OPTION VALUE="126794" >시스템생명특성학과 </option>
+                                    <OPTION VALUE="126908" >식량자원과학과 </option>
+                                    <OPTION VALUE="126910" >식품유통공학과 </option>
+                                    <OPTION VALUE="122068" >신산업융합학과 </option>
+                                    <OPTION VALUE="127116" >신산업융합학과 </option>
+                                    <OPTION VALUE="121244" >양자상및소자전공 </option>
+                                    <OPTION VALUE="127128" >영상영화학과 </option>
+                                    <OPTION VALUE="122407" >영상학과 </option>
+                                    <OPTION VALUE="121175" >영어교육과 </option>
+                                    <OPTION VALUE="121254" >영어영문학과 </option>
+                                    <OPTION VALUE="126799" >영화·애니메이션학과 </option>
+                                    <OPTION VALUE="122408" >영화학과 </option>
+                                    <OPTION VALUE="122056" >유기나노시스템공학과 </option>
+                                    <OPTION VALUE="103022" >유럽문화학연계전공 </option>
+                                    <OPTION VALUE="126920" >융합생명공학과 </option>
+                                    <OPTION VALUE="122051" >융합생명공학전공 </option>
+                                    <OPTION VALUE="126795" >융합생명특성학과 </option>
+                                    <OPTION VALUE="122053" >융합신소재공학과 </option>
+                                    <OPTION VALUE="127125" >융합인재학과 </option>
+                                    <OPTION VALUE="122410" >융합인재학부 </option>
+                                    <OPTION VALUE="105011" >음악교육과 </option>
+                                    <OPTION VALUE="122103" >응용생물과학과 </option>
+                                    <OPTION VALUE="103911" >응용통계학과 </option>
+                                    <OPTION VALUE="127124" >응용통계학과 </option>
+                                    <OPTION VALUE="122404" >의상디자인학과 </option>
+                                    <OPTION VALUE="126918" >의생명공학과 </option>
+                                    <OPTION VALUE="105121" >이과대학 </option>
+                                    <OPTION VALUE="127034" >인문상담치유연계전공 </option>
+                                    <OPTION VALUE="126785" >인프라시스템공학과 </option>
+                                    <OPTION VALUE="104981" >일어교육과 </option>
+                                    <OPTION VALUE="122058" >자율전공학부 </option>
+                                    <OPTION VALUE="103271" >전기공학과 </option>
+                                    <OPTION VALUE="127110" >전기전자공학부 </option>
+                                    <OPTION VALUE="126779" >전자공학과 </option>
+                                    <OPTION VALUE="126902" >전자공학과 </option>
+                                    <OPTION VALUE="105441" >전자공학전공 </option>
+                                    <OPTION VALUE="105451" >정보통신공학전공 </option>
+                                    <OPTION VALUE="126788" >정치외교학과 </option>
+                                    <OPTION VALUE="127120" >정치외교학과 </option>
+                                    <OPTION VALUE="103681" >정치외교학전공 </option>
+                                    <OPTION VALUE="121136" >주거환경전공 </option>
+                                    <OPTION VALUE="126917" >줄기세포재생공학과 </option>
+                                    <OPTION VALUE="126791" >줄기세포재생생물학과 </option>
+                                    <OPTION VALUE="121255" >중어중문학과 </option>
+                                    <OPTION VALUE="102931" >중어중문학전공 </option>
+                                    <OPTION VALUE="121263" >지리학과 </option>
+                                    <OPTION VALUE="127107" >지리학과 </option>
+                                    <OPTION VALUE="121256" >철학과 </option>
+                                    <OPTION VALUE="105001" >체육교육과 </option>
+                                    <OPTION VALUE="122097" >축산식품공학과 </option>
+                                    <OPTION VALUE="126909" >축산식품생명공학과 </option>
+                                    <OPTION VALUE="120809" >축산식품생물공학전공 </option>
+                                    <OPTION VALUE="122402" >커뮤니케이션디자인학과 </option>
+                                    <OPTION VALUE="103013" >커뮤니케이션학전공 </option>
+                                    <OPTION VALUE="126778" >컴퓨터공학과 </option>
+                                    <OPTION VALUE="126904" >컴퓨터공학과 </option>
+                                    <OPTION VALUE="127114" >컴퓨터공학과 </option>
+                                    <OPTION VALUE="122405" >텍스타일디자인학과 </option>
+                                    <OPTION VALUE="122216" >토목공학과 </option>
+                                    <OPTION VALUE="122049" >특성화학부 </option>
+                                    <OPTION VALUE="126993" >특성화학부 </option>
+                                    <OPTION VALUE="122183" >학사지원팀 </option>
+                                    <OPTION VALUE="120933" >항공우주정보시스템공학과 </option>
+                                    <OPTION VALUE="126789" >행정학과 </option>
+                                    <OPTION VALUE="127122" >행정학과 </option>
+                                    <OPTION VALUE="103731" >행정학전공 </option>
+                                    <OPTION VALUE="122406" >현대미술학과 </option>
+                                    <OPTION VALUE="126916" >화장품공학과 </option>
+                                    <OPTION VALUE="122054" >화학공학과 </option>
+                                    <OPTION VALUE="127111" >화학공학부 </option>
+                                    <OPTION VALUE="121261" >화학과 </option>
+                                    <OPTION VALUE="122215" >환경공학과 </option>
+                                    <OPTION VALUE="104581" >환경과학전공 </option>
+                                    <OPTION VALUE="126911" >환경보건과학과 </option>
+                                    <OPTION VALUE="127032" >휴먼ICT연계전공 </option>
+
+                                </SELECT>
+                            </div>
+                            <div id="layer5" STYLE="display:none;">
+                                <SELECT name="strMultPobtDiv01" class="ctl_enabled">
+                                    <OPTION VALUE="">선택</OPTION>
+
+                                    <OPTION VALUE="B07071" >언어교과영역	</OPTION>
+                                    <OPTION VALUE="B07072" >인문과학영역	</OPTION>
+                                    <OPTION VALUE="B07073" >사회과학영역	</OPTION>
+                                    <OPTION VALUE="B07074" >자연과학영역	</OPTION>
+                                    <OPTION VALUE="B07075" >예술및체육영역</OPTION>
+                                    <OPTION VALUE="B07076" >글쓰기영역</OPTION>
+                                    <OPTION VALUE="B07077" >실용영어영역</OPTION>
+
+                                </SELECT>
+                            </div>
+
+                        </TD>
+                    </TR>
+                </TABLE>
+            </td>
+            <TD ALIGN="RIGHT" HEIGHT="20" width="70">
+                <input id="query" type="button" class="button_nav" onMouseOver="this.style.color='#000000';" onMouseOut="this.style.color='#547585'" value="검색" onClick="javaScript:actEvent('curi')" />
+            </TD>
+        </tr>
+    </table>
+
+    <table height=1><tr><td></td></tr></table>
+    <TABLE align="center" CLASS="table_bg" CELLPADDING="0" CELLSPACING="0" BORDER="0" WIDTH="95%">
+        <tr>
+            <td colspan="8" CLASS="table_bg_white">
+                <DIV ID="ListDiv" STYLE="BORDER-STYLE:SOLID; BORDER:1; WIDTH:100%; HEIGHT:150; OVERFLOW:AUTO;">
+                    <TABLE CLASS="table_bg" CELLPADDING="0" CELLSPACING="1" BORDER="0" WIDTH="100%">
+                        <TR>
+                            <TD CLASS="table_color_bright_center" WIDTH="5%">학년</TD>
+                            <TD CLASS="table_color_bright_center" WIDTH="8%">이수구분</TD>
+                            <TD CLASS="table_color_bright_center" WIDTH="8%">과목번호</TD>
+                            <TD CLASS="table_color_bright_center" WIDTH="19%">교과목명</TD>
+                            <TD CLASS="table_color_bright_center" WIDTH="5%">학점</TD>
+                            <TD CLASS="table_color_bright_center" WIDTH="5%">시간</TD>
+                            <TD CLASS="table_color_bright_center" WIDTH="27%">강의요일/시간</TD>
+                            <TD CLASS="table_color_bright_center" WIDTH="8%">담당교수</TD>
+                            <!-- <TD CLASS="table_color_bright_center" WIDTH="10%">신청/제한</TD> -->
+                            <TD CLASS="table_color_bright_center" WIDTH="10%">비고</TD>
+                            <TD CLASS="table_color_bright_center" WIDTH="5%">인원</TD>
+                        </TR>
+                        <!-- 수강신청 교과목 검색부 -->
+
+                    </TABLE><BR>
+                </DIV>
+            </td>
+        </TR>
+    </TABLE>
+
+
+</form>

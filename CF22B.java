@@ -19,7 +19,6 @@ public class CF22B {
         }
 
         for (int i = 0; i < n; i++) {
-
            for (int j = 0; j < m; j++) {
                int r = i, count = 0;
                while (true) {

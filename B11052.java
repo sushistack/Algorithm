@@ -24,4 +24,6 @@ public class B11052 {
         bw.write(dp[N] + "\n");
         bw.flush();bw.close();
     }
+
+
 }

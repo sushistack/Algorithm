@@ -82,6 +82,4 @@ public class SWE2115 {
             this.v = v;this.r = r;this.x = x;this.y = y;
         }
     }
-
-
 }

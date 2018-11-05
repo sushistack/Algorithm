@@ -26,7 +26,6 @@ public class CF230B {
             for(int j = (i << 1) ; j < 1000001 ; j += i){
                 isTPrime[j] = true;
             }
-
         }
     }
 }

@@ -1,0 +1,833 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+    <title> 수강신청 </title>
+    <LINK REL="StyleSheet" HREF="https://kupis.konkuk.ac.kr/sugang/css/Style.css" TYPE="text/css">
+    <meta http-equiv="content-type" content="text/html; charset=KSC5601">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="wed, 04 jul 1973 16:00:00 gmt">
+
+    <iframe name='sessionClose' id='sessionClose' method="post" src='https://kupis.konkuk.ac.kr/sugang/login/SessionClose.jsp' width='0' height='0' ></iframe>
+
+</head>
+<SCRIPT LANGUAGE="JavaScript" SRC="https://kupis.konkuk.ac.kr/sugang/script/kupis_cour_jsp.js"></SCRIPT>
+<script language="javascript">
+    <!--
+    // 검색조건 Control
+    function setdiv(arg){
+        if(arg == 1) {
+            layer1.style.display="";
+            layer2.style.display="none";
+            layer3.style.display="";
+            layer4.style.display="none";
+            layer5.style.display="none";
+            layer6.style.display="none";
+        } else if (arg == 2) {
+            layer1.style.display="none";
+            layer2.style.display="";
+            layer3.style.display="none";
+            layer4.style.display="";
+            layer5.style.display="none";
+            layer6.style.display="none";
+        } else if (arg == 3) {
+            layer1.style.display="none";
+            layer2.style.display="none";
+            layer3.style.display="none";
+            layer4.style.display="none";
+            layer5.style.display="";
+            layer6.style.display="none";
+        } else {
+            layer1.style.display="none";
+            layer2.style.display="none";
+            layer3.style.display="none";
+            layer4.style.display="none";
+            layer5.style.display="none";
+            layer6.style.display="";
+        }
+    }
+
+    function doModifiedCheck() {
+        delCuri();
+        ObjNew  =  document.all("new1");
+        ObjDel  =  document.all("deldirect")
+        ObjCdel =  document.all("del")
+        var varSbjtId = document.frmSugang.strSbjtId.value;
+
+
+        if (document.all.oTbody.rows.length < 1 && varSbjtId == "") {
+        } else if (document.all.oTbody.rows.length ==  1) {                 // 1Row
+            if (ObjDel.checked == false && ObjNew.value == 'N' && varSbjtId == "") {
+            } else {
+                //추가 0620
+                if (confirm("검색항목 변경시 추가된 수강신청 신규과과목은 자동으로 저장됩니다.\n 검색하시겠습니까?") == true) {
+
+                }
+            }
+        } else {    // Multi Row
+            isModify = 0;
+            for (i=0 ; i<document.all.oTbody.rows.length ; i++){
+                if (ObjDel[i].checked == true || ObjNew[i].value == 'Y') {
+                    isModify ++ ;
+                }
+            }
+            if (isModify > 0 || varSbjtId != "") {
+                if (confirm("검색항목 변경시 추가된 수강신청 신규과과목은 자동으로 저장됩니다.\n 검색하시겠습니까?") == true) {
+
+                }
+            }
+        }
+    }
+
+
+    function actEvent(sValue) {
+        ObjecDic = document.all("Schdiv");    // 검색조건에서 선택된 radio 버튼
+        var varForm = document.frmSugang;
+        var varSbjtId = varForm.strSbjtId.value;
+        var v_WarnFg =  "N";
+
+        var v_BfTermChk = "N";
+
+
+        if ("curi" == sValue) {
+            if (ObjecDic[0].checked == true) {
+                var curiNm = document.all("strCorsNm").value;
+                if (curiNm.length > 0 &&  curiNm.length < 2) {
+                    alert('교과목명은 2자 이상적어 주십시요.');
+                    return;
+                }
+                //수정일자 : 2015-07-24
+                //수정자 : 이호찬
+                //내용 : 직전학기 학사경고자가 아니며 과목명이 "학업프로젝트" 0620에 해당하는 과목은 수강신청 불가
+                //		(저 과목 코드는 하드코딩으로 매 학기 바뀔 가능성이 매우 큰 사항임 매학기마다 학사지원팀에 문의하여 바꿔줘야함.)
+                else if(v_WarnFg == "N" && (varSbjtId=="0715" || varSbjtId=="0716")) {
+                    alert("직전학기가 학사경고자만 수강신청이 가능합니다.");
+                    return;
+                }
+            } else if (ObjecDic[1].checked == true) {
+                var curdept = document.all("strDeptCd").value;
+                if (curdept == null || curdept.length != 6) {
+                    alert('개설학과(부) 전공을 확인 하세요.');
+                    return;
+                }
+            } else if (ObjecDic[2].checked == true) {
+                var multPobtDiv01 = document.all("strMultPobtDiv01").value;
+                /*
+                    if (multPobtDiv01 == null || multPobtDiv01.length != 6) {
+                       alert('선택교양을 선택하세요.');
+                       return;
+                    }
+                */
+            }  else if (ObjecDic[3].checked == true) {
+                var multPobtDiv02 = document.all("strMultPobtDiv02").value;
+                /*
+                  if (multPobtDiv02 == null || multPobtDiv02.length != 6) {
+                     alert('지정교양을 선택하세요.');
+                     return;
+                  }
+                */
+            }
+            document.frmSugang.strSaveCheck.value = "N";
+            doModifiedCheck();
+            varForm.submit();
+
+
+        } else if ("set" == sValue ){
+            var varSbjtId = varForm.strSbjtId.value;
+            /*수정일자 : 2007.05.19 - ISP관련 안내문 삽입*/
+            /*
+            if(varSbjtId.substr(0,1) == '8'){
+                var result = confirm("한국문화소개, 한국경제와세계, 국제경영학, 언어학개론, 공공정책개론 과목(8000번대 과목번호)은 국제하계프로그램으로 개설기간이 계절학기와 다르므로 유의하시기 바랍니다. (개설기간 : 2007.07.12~08.07)");
+                if(!result){
+                    varForm.strSbjtId.value = "";
+                    return;
+                }
+            }
+            if(!result){
+                varForm.strSbjtId.value = "";
+                return;
+            }
+            */
+            if (varSbjtId != "" && varSbjtId.length != 4) {
+                alert("과목번호는 4자리 입니다.");
+                return;
+            } else {
+                if (getCheckOneSbjtId(varSbjtId) == 0) {
+                    alert("입력하신 과목번호와 동일한 과목번호가 존재합니다.");
+                    return;
+                }
+                //추가 0620
+                else {
+                    //수정일자 : 2015-07-24
+                    //수정자 : 이호찬
+                    //내용 : 직전학기 학사경고자가 아니며 과목명이 "학업프로젝트" 0620에 해당하는 과목은 수강신청 불가
+                    //		(저 과목 코드는 하드코딩으로 매 학기 바뀔 가능성이 매우 큰 사항임 매학기마다 학사지원팀에 문의하여 바꿔줘야함.)
+                    if(v_WarnFg == "N" && (varSbjtId=="0715" || varSbjtId=="0716")) {
+                        alert("직전학기가 학사경고자만 수강신청이 가능합니다.");
+                        return;
+                    }
+                    /*
+                    else if(v_BfTermChk == "Y" && (varSbjtId=="0618" || varSbjtId=="0619" || varSbjtId=="0620")) {
+                        alert("직전학기 한국어2을 수강한 학생은 신청이 불가합니다.");
+                        return;
+                    }
+                    */
+                }
+            }
+            delCuri();
+            ObjNew  =  document.all("new1");
+            ObjDel  =  document.all("deldirect")
+            ObjCdel =  document.all("del")
+
+
+            if (document.all.oTbody.rows.length < 1 && varSbjtId == "") {
+                return;
+            } else if (document.all.oTbody.rows.length ==  1) {                 // 1Row
+                if ((ObjDel.checked == true  || ObjNew.value == 'Y') == false && varSbjtId == "") {
+                    alert('변경된 내역이 없습니다. ');
+                    return;
+                }
+                if (ObjDel.checked == true){
+                    if(confirm("주의! :삭제구분에 체크가 있습니다.\n\n삭제구분에 체크된 과목은 삭제됩니다. 저장하시겠습니까?") == false){
+                        return;
+                    }
+                }
+            } else {    // Multi Row
+                isModify = 0;
+
+                var delFg = 0;
+                for (i=0 ; i<document.all.oTbody.rows.length ; i++){
+                    if (ObjDel[i].checked == true  || ObjNew[i].value == 'Y') {
+                        isModify ++ ;
+                    }
+                    if (ObjDel[i].checked == true) {
+                        delFg++;
+                    }
+                }
+                if (isModify < 1 && varSbjtId == "") {
+                    alert('변경된 내역이 없습니다.');
+                    return;
+                }
+                if(delFg > 0){
+                    if(confirm("주의! :삭제구분에 체크가 있습니다.\n\n삭제구분에 체크된 과목은 삭제됩니다. 저장하시겠습니까?") == false){
+                        return;
+                    }
+                }
+            }
+            varForm.strSaveCheck.value = "Y";
+            varForm.submit();
+        }
+
+
+    }
+
+    function actBasEvent(sValue) {
+        var varForm = document.frmSugang;
+
+        /*수강신청 과목번호*/
+        var varSbjtId = sValue;
+
+        if (varSbjtId != "" && varSbjtId.length != 4) {
+            alert("과목번호는 4자리 입니다.");
+            return;
+        } else {
+            if (getCheckOneSbjtId(varSbjtId) == 0) {
+                alert("입력하신 과목번호와 동일한 과목번호가 존재합니다.");
+                return;
+            }
+        }
+
+        delCuri();
+        ObjNew  =  document.all("new1");
+        ObjDel  =  document.all("deldirect")
+        ObjCdel =  document.all("del")
+
+
+        if (document.all.oTbody.rows.length < 1 && varSbjtId == "") {
+            return;
+        } else if (document.all.oTbody.rows.length ==  1) {                 // 1Row
+            if ((ObjDel.checked == true  || ObjNew.value == 'Y') == false && varSbjtId == "") {
+                alert('변경된 내역이 없습니다. ');
+                return;
+            }
+        } else {    // Multi Row
+            isModify = 0;
+            for (i=0 ; i<document.all.oTbody.rows.length ; i++){
+                if (ObjDel[i].checked == true  || ObjNew[i].value == 'Y') {
+                    isModify ++ ;
+                }
+            }
+
+            if (isModify < 1 && varSbjtId == "") {
+                alert('변경된 내역이 없습니다.');
+                return;
+            }
+        }
+        document.frmSugang.strSbjtId.value = varSbjtId;
+        varForm.strSaveCheck.value = "Y";
+        varForm.submit();
+    }
+
+
+    function getCheckOneSbjtId(varSbjtId) {
+        ObjCuri    =  document.all("arg_sbjt_id");
+
+
+        if (ObjCuri == null) {
+            return 1;
+        }
+
+
+        if (document.all.oTbody.rows.length < 2 ) {
+            if (ObjCuri.value == varSbjtId) {
+                return 0;
+            }
+
+
+        } else {
+            for (i = 0 ; i < (ObjCuri.length); i++) {
+                if (ObjCuri[i].value == varSbjtId) {
+                    return 0;
+                }
+            }
+        }
+        return 1;
+    }
+
+
+    function getCheckCuri(curiIn,haksuId) {
+        ObjCuri    =  document.all("arg_sbjt_id");
+        ObjHaksuId =  document.all("arg_haksu_id");
+
+
+        if (ObjCuri == null) {
+            return 1;
+        }
+
+
+        if (document.all.oTbody.rows.length < 2 ) {
+            if (ObjCuri.value == curiIn || ObjHaksuId.value == haksuId) {
+                return 0;
+            }
+
+
+        } else {
+            for (i = 0 ; i < (ObjCuri.length); i++) {
+                if (ObjCuri[i].value == curiIn || ObjHaksuId[i].value == haksuId) {
+                    return 0;
+                }
+            }
+        }
+        return 1;
+    }
+
+
+    function kucCheck() {
+        var varKcuCount = document.frmSugang.strKcuCount.value;
+        if (varKcuCount == "0") {
+            return 1;
+        } else {
+            alert("KCU 과목은 한학기당 개인별 수강신청한도는 1과목입니다.");
+            return 0;
+        }
+    }
+
+
+    function insertTr(sbjtId,haksuId,pobtDiv,pnt,tm,campFg,shyr,pobtDivNm,corsNm,room,prof,remk,openSust,classNo,ltKnd) {
+        /*수정일자 : 2007.05.19 - ISP관련 안내문 삽입*/
+        /*
+        if(sbjtId.substr(0,1) == '8'){
+            var result = confirm("한국문화소개, 한국경제와세계, 국제경영학, 언어학개론, 공공정책개론 과목(8000번대 과목번호)은 국제하계프로그램으로 개설기간이 계절학기와 다르므로 유의하시기 바랍니다. (개설기간 : 2007.07.12~08.07)");
+            if(!result){
+                return;
+            }
+        }
+        */
+        //alert("qqqqqqqqq");
+
+        //내용 : 직전학기 학사경고자가 아니며 과목명이 "학업프로젝트" ACCA55142" 해당하는 과목은 수강신청 불가
+        var v_WarnFg =  "N";
+        if(v_WarnFg == "N" && (haksuId=="ACCA55142")) {
+            alert("직전학기가 학사경고자만 수강신청이 가능합니다.");
+            return;
+        }
+
+        if (getCheckCuri(sbjtId,haksuId) == 0) { // 교과목 중복이 있을 경우
+            return;
+        }
+        if (ltKnd == "B31003" && kucCheck() == 0) {
+            return;
+        }
+
+        if(v_WarnFg == "N") {
+            if (lim_cdt(pnt) == 0) {
+                return;
+            }
+        } else {
+            var v_Pnt = 0;
+            if (haksuId=="ACCA55142") {
+                v_Pnt = 0;
+            } else {
+                v_Pnt = pnt;
+            }
+            if (lim_cdt_WarnFg(v_Pnt) == 0) {
+                return;
+            }
+        }
+
+        //oTbody  = document.all("oTbody");
+        oRow 	= document.createElement("TR");
+        oTbody.appendChild(oRow);
+        // 삭제
+        oCell = document.createElement("TD");
+        oCell.innerHTML = "<input type=checkbox name='deldirect'  onClick='return deleteTr()'> " +
+            "  <input type=checkbox  style='display:none' name='del'          value='N'            checked>" +
+            "  <input type=checkbox  style='display:none' name='new1'         value='Y'            checked>" +
+            "  <input type=checkbox  style='display:none' name='arg_sbjt_id'  value='"+sbjtId+"'   checked>" +
+            "  <input type=checkbox  style='display:none' name='arg_haksu_id' value='"+haksuId+"'  checked>" +
+            "  <input type=checkbox  style='display:none' name='arg_pobt_div' value='"+pobtDiv+"'  checked>" +
+            "  <input type=checkbox  style='display:none' name='arg_pnt'      value='"+pnt+"'      checked>" +
+            "  <input type=checkbox  style='display:none' name='arg_tm'       value='"+tm+"'       checked>" +
+            "  <input type=checkbox  style='display:none' name='arg_camp_fg'  value='"+campFg+"'   checked>" +
+            "  <input type=checkbox  style='display:none' name='arg_sust'     value='"+openSust+"' checked>" +
+            "  <input type=checkbox  style='display:none' name='arg_shyr'     value='"+shyr+"'     checked>" +
+            "  <input type=checkbox  style='display:none' name='arg_clss_no'  value='"+classNo+"'  checked>" ;
+
+        oCell.className = "table_color_bright_center";
+        oRow.appendChild(oCell);
+
+        // 1
+        oCell = document.createElement("TD");
+        oCell.innerText = shyr;
+        oCell.className = "table_color_bright_center_temp";
+        oRow.appendChild(oCell);
+
+        // 2
+        oCell = document.createElement("TD");
+        oCell.innerText = pobtDivNm;
+        oCell.className = "table_color_bright_center_temp";
+        oRow.appendChild(oCell);
+
+        // 3
+        oCell = document.createElement("TD");
+        oCell.innerText = sbjtId;
+        oCell.className = "table_color_bright_center_temp";
+        oRow.appendChild(oCell);
+
+        // 4
+        oCell = document.createElement("TD");
+        oCell.innerText = corsNm;
+        oCell.className = "table_color_bright_temp";
+        oRow.appendChild(oCell);
+
+        // 5
+        oCell = document.createElement("TD");
+        oCell.innerText = pnt;
+        oCell.className = "table_color_bright_center_temp";
+        oRow.appendChild(oCell);
+
+        // 6
+        oCell = document.createElement("TD");
+        oCell.innerText = tm;
+        oCell.className = "table_color_bright_center_temp";
+        oRow.appendChild(oCell);
+
+        // 7
+        oCell = document.createElement("TD");
+        oCell.innerText = room;
+        oCell.className = "table_color_bright_temp";
+        oRow.appendChild(oCell);
+
+        // 8
+        oCell = document.createElement("TD");
+        oCell.innerText = prof;
+        oCell.className = "table_color_bright_temp";
+        oRow.appendChild(oCell);
+
+        // 9
+        //oCell = document.createElement("TD");
+        //oCell.innerText = remk;
+        //oCell.className = "table_color_bright";
+        //oRow.appendChild(oCell);
+
+        resum_cdt();
+        chg_attr();
+    }
+
+
+    function deleteTr(){
+        var oChild=oTbody.children(window.event.srcElement.parentNode.parentNode.rowIndex - 1);
+        oTbody.removeChild(oChild);
+        resum_cdt(); // 학점을 계산 한다.
+        chg_attr();  // 과목수를 계산 한다.
+    }
+
+
+    function lim_cdt(pnt) {
+        ObjMax 	    = document.all("CuriMax");
+        OCuriCdt	= document.all("CuriCdt");
+        vObject 	= Number(ObjMax.value);
+//   alert("1:"+Number(checkNull(OCuriCdt.value))+" 2:"+Number(pnt)+" 3:"+Number(checkNull(ObjMax.value)));
+        if ((Number(checkNull(OCuriCdt.value))+Number(pnt)) > Number(checkNull(ObjMax.value))) {
+            alert('신청 가능 학점을 초과 하였습니다. ');
+            return 0;
+            //return 1;
+        }
+        return 1
+    }
+
+
+    function lim_cdt_WarnFg(pnt) {
+        ObjMax 	    = document.all("CuriMax");
+        OCuriCdt	= document.all("CuriCdtWarnFg");
+        vObject 	= Number(ObjMax.value);
+
+//   alert("1:"+Number(checkNull(OCuriCdt.value))+" 2:"+Number(pnt)+" 3:"+Number(checkNull(ObjMax.value)));
+
+        if ((Number(checkNull(OCuriCdt.value))+Number(pnt)) > Number(checkNull(ObjMax.value))) {
+            alert('신청 가능 학점을 초과 하였습니다. ');
+            return 0;
+            //return 1;
+        }
+        return 1
+    }
+
+
+    function checkNull(inData) {
+        if (inData == null || inData == ' ') {
+            return "0"
+        } else {
+            return inData
+        }
+    }
+
+
+    function resum_cdt(){
+        ObjCdt    =  document.all("CuriCdt");
+        ObjExpCdt =  document.all("ExpCuriCdt");
+        ObjectCdt =  document.all("arg_pnt");
+
+        sumValue    = 0
+        tempValue   = 0
+
+
+        if (document.all.oTbody.rows.length < 1) {
+            ObjCdt.value = "0";
+            return;
+        }
+
+
+        if (document.all.oTbody.rows.length == 1) {
+            ObjectCdt = document.getElementById('arg_pnt');
+            ObjCdt.value = Number(ObjectCdt.value);
+
+
+        } else {
+            for (i = 0 ; i < (ObjectCdt.length); i++){
+                if (Number(ObjectCdt[i].value) == null ) {
+                    tempValue = 0
+                } else {
+                    tempValue = Number(ObjectCdt[i].value)
+                }
+                sumValue += tempValue;
+            }
+            ObjCdt.value    = sumValue
+        }
+    }
+
+
+    function delCuri() {
+        ObjNew  =  document.all("new1");
+        ObjDel  =  document.all("deldirect");
+        ObjCdel =  document.all("del");
+        ObjSbjtId  = document.all("arg_sbjt_id");
+        ObjHaksuId = document.all("arg_haksu_id");
+        ObjPobtDiv = document.all("arg_pobt_div");
+        ObjPnt     = document.all("arg_pnt");
+        ObjTm      = document.all("arg_tm");
+        ObjCampFg  = document.all("arg_camp_fg");
+        ObjSust    = document.all("arg_sust");
+        ObjShyr    = document.all("arg_shyr");
+        ObjClss    = document.all("arg_clss_no");
+
+
+        if (document.all.oTbody.rows.length < 1) {
+            return;
+
+
+        } else if (document.all.oTbody.rows.length ==  1) {
+            if (ObjDel.checked == true) {
+
+                if (
+                    ObjSbjtId.value == "0708"
+                    || ObjSbjtId.value == "0709"
+                    || ObjSbjtId.value == "0710"
+                    || ObjSbjtId.value == "0712"
+                    || ObjSbjtId.value == "0713"
+                    || ObjSbjtId.value == "0714"
+                ) {
+                    ObjDel.checked = false;
+                    ObjCdel.value = "Y";
+                    ObjNew.checked  = false;
+                    ObjDel.checked  = false;
+                    ObjCdel.checked = false;
+                    ObjSbjtId.checked  = false;
+                    ObjHaksuId.checked = false;
+                    ObjPobtDiv.checked = false;
+                    ObjPnt.checked     = false;
+                    ObjTm.checked      = false;
+                    ObjCampFg.checked  = false;
+                    ObjSust.checked    = false;
+                    ObjShyr.checked    = false;
+                    ObjClss.checked    = false;
+                    alert("국내대학학점교류과목은 삭제하실 수 없습니다..");
+                } else {
+                    ObjCdel.value = "D";
+                    ObjNew.checked  = true;
+                    ObjDel.checked  = true;
+                    ObjCdel.checked = true;
+                    ObjSbjtId.checked  = true;
+                    ObjHaksuId.checked = true;
+                    ObjPobtDiv.checked = true;
+                    ObjPnt.checked     = true;
+                    ObjTm.checked      = true;
+                    ObjCampFg.checked  = true;
+                    ObjSust.checked    = true;
+                    ObjShyr.checked    = true;
+                    ObjClss.checked    = true;
+                }
+
+            } else {
+                ObjCdel.value = "Y";
+                ObjNew.checked  = false;
+                ObjDel.checked  = false;
+                ObjCdel.checked = false;
+                ObjSbjtId.checked  = false;
+                ObjHaksuId.checked = false;
+                ObjPobtDiv.checked = false;
+                ObjPnt.checked     = false;
+                ObjTm.checked      = false;
+                ObjCampFg.checked  = false;
+                ObjSust.checked    = false;
+                ObjShyr.checked    = false;
+                ObjClss.checked    = false;
+            }
+            if (ObjNew.value == "Y") {
+                ObjCdel.value = "N";
+                ObjNew.checked  = true;
+                ObjDel.checked  = false;
+                ObjCdel.checked = true;
+                ObjSbjtId.checked  = true;
+                ObjHaksuId.checked = true;
+                ObjPobtDiv.checked = true;
+                ObjPnt.checked     = true;
+                ObjTm.checked      = true;
+                ObjCampFg.checked  = true;
+                ObjSust.checked    = true;
+                ObjShyr.checked    = true;
+                ObjClss.checked    = true;
+            }
+
+        } else {
+            for (i=0; i<document.all.oTbody.rows.length ; i++) {
+                if (ObjDel[i].checked == true) {
+
+                    if (
+                        ObjSbjtId[i].value == "0708"
+                        || ObjSbjtId[i].value == "0709"
+                        || ObjSbjtId[i].value == "0710"
+                        || ObjSbjtId[i].value == "0712"
+                        || ObjSbjtId[i].value == "0713"
+                        || ObjSbjtId[i].value == "0714"
+                    ) {
+                        ObjDel[i].checked = false;
+                        ObjCdel[i].value = "Y";
+                        ObjNew[i].checked  = false;
+                        ObjDel[i].checked  = false;
+                        ObjCdel[i].checked = false;
+                        ObjSbjtId[i].checked  = false;
+                        ObjHaksuId[i].checked = false;
+                        ObjPobtDiv[i].checked = false;
+                        ObjPnt[i].checked     = false;
+                        ObjTm[i].checked      = false;
+                        ObjCampFg[i].checked  = false;
+                        ObjSust[i].checked    = false;
+                        ObjShyr[i].checked    = false;
+                        ObjClss[i].checked    = false;
+                        alert("국내대학학점교류과목은 삭제하실 수 없습니다..");
+                    } else {
+                        ObjCdel[i].value = "D";
+                        ObjNew[i].checked  = true;
+                        ObjDel[i].checked  = true;
+                        ObjCdel[i].checked = true;
+                        ObjSbjtId[i].checked  = true;
+                        ObjHaksuId[i].checked = true;
+                        ObjPobtDiv[i].checked = true;
+                        ObjPnt[i].checked     = true;
+                        ObjTm[i].checked      = true;
+                        ObjCampFg[i].checked  = true;
+                        ObjSust[i].checked    = true;
+                        ObjShyr[i].checked    = true;
+                        ObjClss[i].checked    = true;
+                    }
+                } else {
+                    ObjCdel[i].value = "Y";
+                    ObjNew[i].checked  = false;
+                    ObjDel[i].checked  = false;
+                    ObjCdel[i].checked = false;
+                    ObjSbjtId[i].checked  = false;
+                    ObjHaksuId[i].checked = false;
+                    ObjPobtDiv[i].checked = false;
+                    ObjPnt[i].checked     = false;
+                    ObjTm[i].checked      = false;
+                    ObjCampFg[i].checked  = false;
+                    ObjSust[i].checked    = false;
+                    ObjShyr[i].checked    = false;
+                    ObjClss[i].checked    = false;
+                }
+                if (ObjNew[i].value == "Y") {
+                    ObjCdel[i].value = "N";
+                    ObjNew[i].checked  = true;
+                    ObjDel[i].checked  = false;
+                    ObjCdel[i].checked = true;
+                    ObjSbjtId[i].checked  = true;
+                    ObjHaksuId[i].checked = true;
+                    ObjPobtDiv[i].checked = true;
+                    ObjPnt[i].checked     = true;
+                    ObjTm[i].checked      = true;
+                    ObjCampFg[i].checked  = true;
+                    ObjSust[i].checked    = true;
+                    ObjShyr[i].checked    = true;
+                    ObjClss[i].checked    = true;
+                }
+            }
+        }
+    }
+
+
+    function chg_attr() {
+        ObjCdt       =  document.all("CuriCnt");
+        ObjCdt.value = Number(document.all.oTbody.rows.length);
+    }
+
+
+    function evalQuery() {
+        return true;
+    }
+
+    function evalNew() {
+        return true;
+    }
+
+    function setDefault() {
+        resum_cdt();
+        chg_attr();
+    }
+
+    /* 각 Row 별 색깔 반전 */
+    function doOver(obj) {
+//        obj.style.backgroundColor="#FFEEFF";
+        obj.style.backgroundColor="#AFEEEE";
+    }
+
+    function doOut(obj, index) {
+        if (index == 1) {
+            obj.style.backgroundColor="#F6F6F6";
+        } else {
+            obj.style.backgroundColor="#FFFFFF";
+        }
+    }
+
+    //엔터키 누름
+    function EnterKeyEvent(args){
+        if(event.keyCode == 13){
+            actEvent(args);
+        }
+    }
+
+    function doPop(ltYy, ltShtm, sbjtId){
+        window.open("https://kupis.konkuk.ac.kr/sugang/acd/cour/aply/CourInwonInq.jsp?ltYy="+ltYy+"&ltShtm="+ltShtm+"&sbjtId="+sbjtId,
+            "","menubar=0,resizable=yes,scrollbars=yes,status=0,width=400,height=400");
+    }
+
+    function doInit() {
+        var Browser = {
+            a : navigator.userAgent.toLowerCase()
+        }
+
+        Browser = {
+            ie : /*@cc_on true || @*/ false,
+            ie6 : Browser.a.indexOf('msie 6') != -1,
+            ie7 : Browser.a.indexOf('msie 7') != -1,
+            ie8 : Browser.a.indexOf('msie 8') != -1,
+            opera : !!window.opera,
+            safari : Browser.a.indexOf('safari') != -1,
+            safari3 : Browser.a.indexOf('applewebkit/5') != -1,
+            mac : Browser.a.indexOf('mac') != -1,
+            chrome : Browser.a.indexOf('chrome') != -1,
+            firefox : Browser.a.indexOf('firefox') != -1
+        }
+
+
+        if (Browser.chrome) {
+            document.frmSugang.strBrowser.value = "chrome";
+        } else if (Browser.ie6) {
+            document.frmSugang.strBrowser.value = "ie6";
+        } else if (Browser.ie7) {
+            document.frmSugang.strBrowser.value = "ie7";
+        } else if (Browser.ie8) {
+            document.frmSugang.strBrowser.value = "ie8";
+        } else if (Browser.opera) {
+            document.frmSugang.strBrowser.value = "opera";
+        } else if (Browser.safari) {
+            document.frmSugang.strBrowser.value = "safari";
+        } else if (Browser.safari3) {
+            document.frmSugang.strBrowser.value = "safari3";
+        } else if (Browser.mac) {
+            document.frmSugang.strBrowser.value = "mac";
+        } else if (Browser.firefox) {
+            document.frmSugang.strBrowser.value = "firefox";
+        } else {
+            document.frmSugang.strBrowser.value = "etc";
+        }
+
+
+        //alert("계절학기 수강신청시 학적기본의 은행계좌번호와 은행명이 있어야 가능합니다.");
+        //history.go(-1);
+
+
+
+
+
+        document.frmSugang.strSbjtId.focus();
+
+
+
+        alert("수강신청 기간이 아닙니다.");
+        document.location.href='https://kupis.konkuk.ac.kr/sugang/login/mainBtm.html';
+
+
+
+
+    }
+    // -->
+</script>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" scroll="yes" oncontextmenu="return false" onload="JavaScript:doInit();">
+
+</body>
+</html>
+
